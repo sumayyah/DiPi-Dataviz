@@ -1,0 +1,74 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 100%;
+}
+
+/*****NAVIGATION********/
+nav{
+	width: 100%;
+	height: 200px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	background: white;
+	border-bottom: 3px solid black;
+
+/*	-webkit-box-shadow: 0px 0px 0px 1px black;
+	-moz-box-shadow: -1px 4px 22px -1px rgba(0,0,0,0.75);
+	box-shadow: -1px 4px 22px -1px rgba(0,0,0,0.75);*/
+
+
+	font-weight: 400;
+	font-size: 100%;
+	color: black;
+}
+
+nav ul{
+	list-style: none;
+}
+nav ul li{
+	display: block;
+	position: relative;
+	float: right;
+	padding: 10px;
+	margin-top: 5%;
+}
+
+h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 200%;
+	color: black;
+	float: left;
+	margin-top: 5%;
+}
+
+a, a:hover{
+	text-decoration: none;
+}
+
+hr{
+	color:rgba(255,65,0,0.8);
+	background-color: rgba(255,65,0,0.8);
+	height: 5px;
+	width: 800px;
+	border: none;
+}
+
+#parallax{
+	height: 70%;
+	width: 100%;
+	margin-top: 11%;
+	position: relative;
+}
+
+.parallaxSec{
+	height: 30%;
+	width: 100%;
+}
