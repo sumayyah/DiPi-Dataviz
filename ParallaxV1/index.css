@@ -8,7 +8,7 @@ body{
 	font-size: 100%;
 }
 
-/*****NAVIGATION********/
+/**************NAVIGATION********/
 nav{
 	width: 100%;
 	height: 75px;
@@ -18,12 +18,6 @@ nav{
 	z-index: 5;
 	background-color: #202020;
 	padding: 2%;
-	/*border-bottom: 2px solid black;*/
-
-/*	-webkit-box-shadow: 0px 0px 0px 1px black;
-	-moz-box-shadow: -1px 4px 22px -1px rgba(0,0,0,0.75);
-	box-shadow: -1px 4px 22px -1px rgba(0,0,0,0.75);*/
-
 
 	font-weight: 400;
 	font-size: 100%;
@@ -66,6 +60,7 @@ h1{
 	text-decoration: none;
 }
 
+/***************PARALLAX******************/
 #parallax{
 	height: 70%;
 	width: 100%;
@@ -80,17 +75,62 @@ h1{
 
 #home{
 	height: 400px;
+	text-align: left;
+	padding: 50px;
+
+	display: flex;
+	justify-content:center;
 }
-}#home p{
-	text-align: center;
+#home h1{
+	color:black;
+	height:100%;
+	margin: 50px;
+}
+}#home .column{
+	width: 400px;
+	margin-left: 30px;
+	padding: 30px;
+}
+#popupDiv{
+	bottom: 0px;
+	display: none;
+
+	position: fixed;
+	width: 100%;
+	height: 200px;
+	background-color: white;
+	color: black;
+	display: flex;
+	justify-content:center;
+	padding: 10px;
+
+	/*column-count:5;
+	column-width: 20em;*/
+} 
+.column{
+	width: 300px;
+	font-size: 0.75em;
+}.column .name{
+	color: rgba(255,65,0,0.8);
+}.column h4, .column h6{
+	font-size: 1em;
 }
 
+/***************FOOTER****************/
 footer{
 	width: 100%;
 	height: 75px;
 	background-color: #383633;
 }
+/*footer{
+	bottom: 0px;
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	background-color: #383633;
+}*/
 footer p{
 	color:white;
-
+	padding: 20px;
 }
