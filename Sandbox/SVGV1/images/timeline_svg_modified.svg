@@ -1151,7 +1151,7 @@
 			</g>
 		</g>
 	</g>
-	<g opacity="0.8">
+	<g opacity="0.8" id="arrow">
 		<g>
 			<path fill="none" stroke="#4C4A49" stroke-width="0.5669" stroke-miterlimit="10" d="M285.472,1838.304
 				c15.124-9.104,84.715-50.846,110.493-63.645"/>
@@ -1231,7 +1231,7 @@
 		<text transform="matrix(1 0 0 1 810.957 1490.4346)" fill="#232120" font-family="'ArialMT'" font-size="10">(CBPR) Program</text>
 		<text transform="matrix(1 0 0 1 810.957 1504.835)" fill="#B4B5B5" font-family="'ArialMT'" font-size="10">1995 to Present</text>
 	</g>
-	<text transform="matrix(1 0 0 1 131.9604 143.0156)" fill="#232120" font-family="'ArialMT'" font-size="10">Saul Alinsky</text>
+	<text transform="matrix(1 0 0 1 131.9604 143.0156)" fill="#232120" font-family="'ArialMT'" font-size="10" id="saul">Saul Alinsky</text>
 	<text transform="matrix(1 0 0 1 131.9604 157.415)" fill="#B5B6B6" font-family="'ArialMT'" font-size="10">1960s to 1990s</text>
 	<g>
 		<text transform="matrix(1 0 0 1 906.6094 226.1719)" fill="#232120" font-family="'ArialMT'" font-size="10">Pacific Rim Participatory </text>
