@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700|Rosario:400italic,400,700italic,700|Open+Sans:100,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<title>Index</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+	<script type="text/javascript" src="script.js"></script>
+
+
+	<meta charset="utf-8"> 
+</head>
+
+<body>
+
+	<nav>
+		<h1><a href="#" id="title">Index</a></h1>
+		<ul>
+			
+			<li><a href="#" id="about">about</li>
+			<li><a href="#" id="resources">resources</li>
+			<li><a href="#" id="glossary">glossary</li>
+			<li><a href="#" id="index">index</li>
+			<li></li>
+			<li></li>
+			<li><a href="index.html" id="home">home</li>
+
+		</ul>
+	</nav>
+	
+		
+	<section id="wrapper">		
+		<section id="content">
+
+			<div id="contentCol1" class="column">
+				Design Corps is a non-profit organisation founded in 1991 by Bryan Bell and Victoria Ballard Bell, initially to address the severe shortage of adequate housing for migrant workers in the area surrounding Raleigh, North Carolina, where they lived. The agricultural state relies heavily on large numbers of workers from Mexico and other Central American countries, for seasonal work such as fruit picking. Due to their immigration status these workers do not qualify for healthcare or housing benefits, whilst many of the farmers on whom they depend for lodging themselves struggle financially. This has resulted in extremely poor living and working conditions and a population that is segregated. During the past ten years Design Corps have set up a Farmworker Housing Program that secures funding and tries to build culturally appropriate housing for the workers.
+
+Initially, Design Corps did not wait to be commissioned but instead approached farmers, petitioning them to help build better facilities. The programme includes an application for a federal government grant which can provide 50-100% of the construction costs, with the remainder of the costs being met by the farmer. The buildings are subject to a ten year contract where the farmer agrees to meet certain conditions for the standard of living of the workers in return for the new building. These conditions are set by Design Corps and are the result of consultations with the workers in the form of questionnaires, interviews and workshops. Their participatory approach allows the designers to understand individual needs and problems; for example in one case, the workers were provided with bunk beds by the farmer - these proved unacceptable for older men and so a 'no bunk beds' condition was written into the contract.
+			</div>
+			<div id="contentCol2" class="column">
+			Design Corps is a non-profit organisation founded in 1991 by Bryan Bell and Victoria Ballard Bell, initially to address the severe shortage of adequate housing for migrant workers in the area surrounding Raleigh, North Carolina, where they lived. The agricultural state relies heavily on large numbers of workers from Mexico and other Central American countries, for seasonal work such as fruit picking. Due to their immigration status these workers do not qualify for healthcare or housing benefits, whilst many of the farmers on whom they depend for lodging themselves struggle financially. This has resulted in extremely poor living and working conditions and a population that is segregated. During the past ten years Design Corps have set up a Farmworker Housing Program that secures funding and tries to build culturally appropriate housing for the workers.
+
+Initially, Design Corps did not wait to be commissioned but instead approached farmers, petitioning them to help build better facilities. The programme includes an application for a federal government grant which can provide 50-100% of the construction costs, with the remainder of the costs being met by the farmer. The buildings are subject to a ten year contract where the farmer agrees to meet certain conditions for the standard of living of the workers in return for the new building. These conditions are set by Design Corps and are the result of consultations with the workers in the form of questionnaires, interviews and workshops. Their participatory approach allows the designers to understand individual needs and problems; for example in one case, the workers were provided with bunk beds by the farmer - these proved unacceptable for older men and so a 'no bunk beds' condition was written into the contract.
+				
+			</div>
+			<div id="contentCol3" class="column">
+				Design Corps is a non-profit organisation founded in 1991 by Bryan Bell and Victoria Ballard Bell, initially to address the severe shortage of adequate housing for migrant workers in the area surrounding Raleigh, North Carolina, where they lived. The agricultural state relies heavily on large numbers of workers from Mexico and other Central American countries, for seasonal work such as fruit picking. Due to their immigration status these workers do not qualify for healthcare or housing benefits, whilst many of the farmers on whom they depend for lodging themselves struggle financially. This has resulted in extremely poor living and working conditions and a population that is segregated. During the past ten years Design Corps have set up a Farmworker Housing Program that secures funding and tries to build culturally appropriate housing for the workers.
+
+Initially, Design Corps did not wait to be commissioned but instead approached farmers, petitioning them to help build better facilities. The programme includes an application for a federal government grant which can provide 50-100% of the construction costs, with the remainder of the costs being met by the farmer. The buildings are subject to a ten year contract where the farmer agrees to meet certain conditions for the standard of living of the workers in return for the new building. These conditions are set by Design Corps and are the result of consultations with the workers in the form of questionnaires, interviews and workshops. Their participatory approach allows the designers to understand individual needs and problems; for example in one case, the workers were provided with bunk beds by the farmer - these proved unacceptable for older men and so a 'no bunk beds' condition was written into the contract.
+				
+			</div>
+			
+		</section>
+
+
+		<div id="popupDiv" class="parallaxSec">
+			<div id="col1" class="column">
+				<h4 class="name">Name</h4>
+				<h6>1960-1980</h6>
+				<h6>Field 1, Field 2, etc</h6>
+				<br>
+				<!-- <a href="/images/timeline_sample.pdf" download="newfilename">Resume</a> -->
+			</div>
+			
+			<div id="col2" class="column">
+				<h4>Work</h4>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				<h4>Projects</h4>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+			</div>
+
+			<div id="col3" class="column">
+				<h4>Influences</h4>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+			</div>
+			
+		</div>
+		<footer>
+			<!-- Copyright 2014 -->
+		</footer>	
+	
+	</section>
+
+
+</body>

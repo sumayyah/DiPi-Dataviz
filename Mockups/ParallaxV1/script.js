@@ -3,6 +3,7 @@ $(document).ready(function(){
 	var offsetvar = 1; 
 
 	console.log("Ready!");
+	$('#popupDiv').slideDown(2000);
 
 	
 	console.log("Home "+$("#home").position().top+" community design "+$("#cdev").position().top);

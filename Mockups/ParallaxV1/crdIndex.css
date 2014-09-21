@@ -1,0 +1,123 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+}
+
+/**************NAVIGATION********/
+nav{
+	width: 100%;
+	height: 75px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	background-color: #202020;
+	padding: 2%;
+
+	font-weight: 400;
+	font-size: 100%;
+}
+
+nav ul{
+	list-style: none;
+	margin-right: 5%;
+
+}
+nav ul li{
+	display: block;
+	position: relative;
+	float: right;
+	padding: 6px;
+	margin-top: 2%;
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+a:not(#title){
+
+	text-transform: lowercase;
+	
+	font-size: 0.75em;
+}
+a:visited, a:hover{
+	color:white;
+	text-decoration: none;
+}
+
+h1{
+	font-family: 'Rosario', sans-serif;
+	font-weight: 300;
+	font-size: 200%;
+	color: white;
+	float: left;
+	margin-top: 1.5%;
+	text-decoration: none;
+}
+
+/***************CONTENT*********************/
+
+#content{
+	width: 100%;
+	height: 100%;
+	margin-top: 150px;
+
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	color: black;
+}
+
+#content ul{
+	list-style: none;
+}
+
+#content h4{
+	font-size: 2em;
+	font-weight: bold;
+	text-align: right;
+}
+#content .column{
+	text-align: right;
+}
+/***************INFO PANEL******************/
+
+#popupDiv{
+	bottom: 0px;
+	visibility: hidden;
+
+	position: fixed;
+	width: 100%;
+	height: 200px;
+	background-color: white;
+	color: black;
+	display: flex;
+	justify-content:center;
+	padding: 10px;
+
+} 
+.column{
+	width: 300px;
+	font-size: 0.75em;
+}.column .name{
+	color: rgba(255,65,0,0.8);
+}.column h4, .column h6{
+	font-size: 1em;
+}
+
+/***************FOOTER****************/
+footer{
+	width: 100%;
+	height: 75px;
+	background-color: #383633;
+}
+
+footer p{
+	color:white;
+	padding: 20px;
+}

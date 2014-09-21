@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
 	console.log("Ready!");
+	$('#popupDiv').slideUp(10);
 
 	/***** ANIMATE SVG *****/
 
@@ -53,7 +54,6 @@ $(document).ready(function(){
 		}
 	}
 	var entityClickTest = function(e){
-		console.log("Clicked saul!");
 		animateHiddenDiv(e);
 	}
 
@@ -75,7 +75,7 @@ $(document).ready(function(){
 
 	function animateHiddenDiv(e){
 		e.preventDefault();
-		console.log("Animate hidden div");
+		console.log($("#popupDiv").css("visibility"));
 
 		if($('#popupDiv').is(":visible")){
 			console.log("div visible");
