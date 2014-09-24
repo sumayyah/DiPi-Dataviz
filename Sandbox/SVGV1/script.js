@@ -1,16 +1,18 @@
 $(document).ready(function(){
 
 	console.log("Ready!");
+	$("#popupDiv").slideUp(10);
 
 	/***** ANIMATE SVG *****/
 
 	var paper = Snap("#paper");
 
-	Snap.load("images/timeline_svg_mod2.svg", onSVGLoaded);
+	Snap.load("images/timeline_svg2_fullsize.svg", onSVGLoaded);
 
 	var yearsGroup;
 	var entitiesGroup;
 	var pathsGroup;
+	var communityEntities;
 
 	var e1, e2, e3, e4, e5;
 	var c1, c2, c3, c4, c5;
@@ -21,54 +23,48 @@ $(document).ready(function(){
 	var publicHealth;
 	var technologyDevelopment;
 
+	var davidoff;
+
 
 
 	function onSVGLoaded(svgFile){
 
 		//Parse SVG file
 		
-		console.log("Lo aded!");
+		console.log("Loaded!");
 		
-		var whole = svgFile.select("#Layer_1");
+		var whole = svgFile.select("#Layer1");
 
-		communityDesign = whole.select("#Community_Design");
-		youthDevelopment = whole.select("#Youth_Development");
-		internationalDevelopment = whole.select("#International_Development");
-		publicHealth = whole.select("#Public_Health");
-		technologyDevelopment = whole.select("#Technology_Development");
+		var communityDesign = whole.select("#Community_Design");
+		var communityEntities = communityDesign.select("#Entities_1_");
+		davidoff = communityEntities.select(".name");
 
-		yearsGroup = whole.select("#Years");
-		e1 = whole.select("#entities");
-		e2 = whole.select("#entities_1_");
-		e3 = whole.select("#entities_2_");
-		e4 = whole.select("#entities_3_");
-		e5 = whole.select("#entities_4_");
+		console.log(davidoff)
 
-		c1 = whole.select("#connections");
-		c2 = whole.select("#connections_1_");
-		c3 = whole.select("#connections_2_");
-		c4 = whole.select("#connections_3_");
-		c5 = whole.select("#connections_4_");
+		entitiesGroup = whole.select("#Entities");
+		pathsGroup = whole.select("#Connections");
 
-		entitiesGroup = paper.group(e1, e2, e3, e4, e5);
-		pathsGroup = paper.group(c1, c2, c3, c4, c5);
-
-		// entitiesGroup = whole.selectAll("#entities, #entities_1_, #entities_2_, #entities_3_, #entities_4_");
-		// pathsGroup = whole.selectAll("#connections, #connections_1_, #connections_2_, #connections_3_, #connections_4_");
-
-		//Define functionalities for each section
-		// yearsGroup.hover(onhover, outhover);
-
-		var saul = whole.select("#alinsky");
-		saul.click(animateHiddenDiv(e));
-
-		//Change cursor to indicate clickability
+		// //Change cursor to indicate clickability
 		entitiesGroup.hover(makeClickable(entitiesGroup));
+		communityEntities.hover(makeClickable(communityEntities));
 		pathsGroup.hover(makeClickable(pathsGroup));
+
+		davidoff.click(function(){
+			var id = $(this).attr('id');
+			var id2 = $(this).attr('node').attr('attributes')[1];
+			console.log("clicked "+id+" "+id2);
+		});
+
+		communityEntities.click(function(){
+			var id = $(this).attr('id');
+			// console.log("Clicked on community entity "+id);
+		})
 
 		//Add to DOM
 		paper.append(svgFile);
 	}
+
+
 
 	var makeClickable = function(name){
 		name.addClass("hovered");

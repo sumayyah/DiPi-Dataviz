@@ -1,8 +1,6 @@
 
 $(document).ready(function(){
 
-	// console.log($("#popupDiv").css("visibility"));
-	// if()
 	$("#popupDiv").slideUp(10);
 
 	var offsetvar = 1; 
