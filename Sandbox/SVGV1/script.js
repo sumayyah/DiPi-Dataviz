@@ -23,7 +23,7 @@ $(document).ready(function(){
 	var publicHealth;
 	var technologyDevelopment;
 
-	var davidoff;
+	var person;
 
 
 
@@ -37,9 +37,9 @@ $(document).ready(function(){
 
 		var communityDesign = whole.select("#Community_Design");
 		var communityEntities = communityDesign.select("#Entities_1_");
-		davidoff = communityEntities.select(".name");
+		person = communityEntities.select(".name");
 
-		console.log(davidoff)
+		console.log(person);
 
 		entitiesGroup = whole.select("#Entities");
 		pathsGroup = whole.select("#Connections");
@@ -49,12 +49,14 @@ $(document).ready(function(){
 		communityEntities.hover(makeClickable(communityEntities));
 		pathsGroup.hover(makeClickable(pathsGroup));
 
-		davidoff.click(function(){
-			var id = $(this).attr('id');
-			var id2 = $(this).attr('node').attr('attributes')[1];
-			console.log("clicked "+id+" "+id2);
-		});
+		// person.click(function(){
+		// 	// var id = $(this).attr('id');
+		// 	// var id2 = $(this).get('node').attr('attributes')[1];
+		// 	// console.log("clicked "+id+" "+id2);
+		// 	console.log("clicked person");
+		// });
 
+		//Attach click listener to parent, get ID of child clicked
 		communityEntities.click(function(){
 			var id = $(this).attr('id');
 			// console.log("Clicked on community entity "+id);

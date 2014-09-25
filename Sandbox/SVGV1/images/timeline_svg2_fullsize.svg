@@ -343,14 +343,16 @@
 	</g>
 
 	<g id="Entities_1_">
-		<text transform="matrix(1 0 0 1 131.9604 143.0151)"><tspan x="0" y="0" fill="#232120" font-family="'HelveticaNeue'" font-size="10">Saul Alinsky</tspan><tspan x="0" y="14.4" fill="#B5B6B6" font-family="'HelveticaNeue'" font-size="10">1960s to 1990s</tspan></text>
+		<g id="alinsky" class="name">
+			<text transform="matrix(1 0 0 1 131.9604 143.0151)"><tspan x="0" y="0" fill="#232120" font-family="'HelveticaNeue'" font-size="10">Saul Alinsky</tspan><tspan x="0" y="14.4" fill="#B5B6B6" font-family="'HelveticaNeue'" font-size="10">1960s to 1990s</tspan></text>
+		</g>
 		<g>
 			<text transform="matrix(1 0 0 1 906.6094 226.1714)"><tspan x="0" y="0" fill="#232120" font-family="'HelveticaNeue-Italic'" font-size="10">Pacific Rim Participatory </tspan><tspan x="0" y="14.4" fill="#232120" font-family="'HelveticaNeue-Italic'" font-size="10">Community Design Conference </tspan><tspan x="0" y="28.8" fill="#B4B5B5" font-family="'HelveticaNeue-Italic'" font-size="10">1998 to Present</tspan></text>
 		</g>
 		<g id="davidoff" class="name">
 			<text transform="matrix(1 0 0 1 238.6089 144.021)"><tspan x="0" y="0" font-family="'HelveticaNeue'" font-size="10">Paul Davidoff</tspan><tspan x="0" y="14.4" fill="#B5B6B6" font-family="'HelveticaNeue'" font-size="10">1960s to 1980s</tspan></text>
-		</g>
-		<g>
+		</g> 
+		<g id="hester" class="name">
 			<text transform="matrix(1 0 0 1 491.2622 380.3228)"><tspan x="0" y="0" font-family="'HelveticaNeue'" font-size="9">Randy Hester</tspan><tspan x="0" y="14.4" fill="#B4B5B5" font-family="'HelveticaNeue'" font-size="9">1970s to Present</tspan></text>
 		</g>
 		<g>
