@@ -32,19 +32,19 @@ nav ul li{
 	display: block;
 	position: relative;
 	float: right;
-	padding: 8px;
+	padding: 6px;
 	margin-top: 2%;
 }
 a{
 	text-decoration: none;
 	color:white;
+	font-size: 1em;
 }
-a:not(#title){
-
-	text-transform: lowercase;
-	
+nav a:not(#title){
 	font-size: 0.75em;
+	text-transform: lowercase;
 }
+
 a:visited, a:hover{
 	color:white;
 	text-decoration: none;
@@ -54,57 +54,36 @@ h1{
 	font-family: 'Rosario', sans-serif;
 	font-weight: 300;
 	font-size: 200%;
-	color: white;
+	color: black;
 	float: left;
 	margin-top: 1.5%;
 	text-decoration: none;
 }
 
-/***************CONTENT******************/
+/***************CONTENT*********************/
 
 #content{
 	width: 100%;
 	height: 100%;
-}
-
-#paper{
-	margin-top: 80px;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-}
-.hovered{
-	cursor:pointer;
-}
-.clicked{
-	color:red;
-}
-
-
-/**************DETAIL PANEL************/
-#popupDiv{
-	bottom: 0px;
-
-	position: fixed;
-	width: 100%;
-	height: 200px;
-	background-color: white;
+	margin-top: 150px;
+	padding-left: 50px;
 	color: black;
-	display: flex;
-	justify-content:center;
-	padding: 10px;
-
-	/*column-count:5;
-	column-width: 20em;*/
-} 
-.column{
-	width: 300px;
-	font-size: 0.75em;
-}.column .name{
-	color: rgba(255,65,0,0.8);
-}.column h4, .column h6{
-	font-size: 1em;
 }
+
+#content ul{
+	list-style: none;
+}
+#content a{
+	color: black;
+}
+
+.hovered{
+	cursor: pointer;
+}
+.section{
+	width: 100%;
+}
+
 
 /***************FOOTER****************/
 footer{
@@ -112,14 +91,7 @@ footer{
 	height: 75px;
 	background-color: #383633;
 }
-/*footer{
-	bottom: 0px;
-	display: none;
-	position: fixed;
-	width: 100%;
-	height: 100px;
-	background-color: #383633;
-}*/
+
 footer p{
 	color:white;
 	padding: 20px;

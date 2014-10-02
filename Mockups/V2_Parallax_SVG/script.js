@@ -1,87 +1,129 @@
 $(document).ready(function(){
 
-	var offsetvar = 1; 
-
 	console.log("Ready!");
+	$("#popupDiv").slideUp(10);
+	var entities =["arnstein", "davidoff", "krumholz", "alinsky", "linn", "halprin", "curry","arch", "arc", "and", "acd", "sanoff", "hester", "francis", "hamdi", "hou","prpcdn", "lynch", "hart", "moore", "chawla", "driskell","miginc", "crtc", "la21", "unicef", "symposium","freie", "chambers","sussex","unrisd","worldbank","undp","donors","icae", "pria" ,"sewa","grameen","fals-borda","opp-rti", "whyte", "minkler", "wallerstein","cbpr", "drsconference","njmf","demos","utopia","due", "xerox","florence","atproject", "cpsr","pdc", "psp", "ehn", "atelier" , "sanders"];
 
-	
-	console.log("Home "+$("#home").position().top+" community design "+$("#cdev").position().top);
+	var jsonDataObj;
+
+	jQuery.getJSON("materials/entities_info_nospace.json", function(data){
+		console.log("Got file data!");
+		jsonDataObj = data.items;
+		var firstname = data.items[0].Practitioner;
+		console.log("First name is: "+firstname);
+	});
+
+	/***** ANIMATE SVG *****/
+
+	var paper = Snap("#paper");
+
+	Snap.load("materials/timeline_svg2_fullsize.svg", onSVGLoaded);
+
+	var yearsGroup;
+	var entitiesGroup;
+	var pathsGroup;
+	var communityEntities;
+
+	var communityDesign;
+	var youthDevelopment;
+	var internationalDevelopment;
+	var publicHealth;
+	var technologyDevelopment;
+
+	var communityEntityArray;
+	var entityArray;
+
+
+	function onSVGLoaded(svgFile){
+
+		//Parse SVG file
+		
+		console.log("Loaded!");
+		
+		var whole = svgFile.select("#Layer1");
+
+		var communityDesign = whole.select("#Community_Design");
+		var communityEntities = communityDesign.select("#Entities_1_");
+		communityEntityArray = communityEntities.selectAll(".name");
+
+		entitiesGroup = whole.select("#Entities");
+		pathsGroup = whole.select("#Connections");
+
+		// //Change cursor to indicate clickability
+		entitiesGroup.hover(makeClickable(entitiesGroup));
+		communityEntities.hover(makeClickable(communityEntities));
+		pathsGroup.hover(makeClickable(pathsGroup));
+
+		//Attach click listener to parent array, get ID of child clicked
+		communityEntityArray.forEach(function(element, index, array){
+			element.click(function(){
+				var text = element.selectAll("#text");
+				var id=element.attr('id');
+				$("*").removeClass('clicked');
+				console.log("clicked "+id);
+				text.addClass('clicked');
+				setHiddenDiv(id);
+			});
+		});
+
+		//Add to DOM
+		paper.append(svgFile);
+	}
 
 	$('a').click(function(e){
 		var id = $(this).attr('id');
-		// console.log("ID is "+id);
 
 		switch(id){
-			case 'info':
-				animateHiddenDiv(e);
-				break;
-			case 'title':
-				console.log("clicke title!")
-				$("html, body").animate({scrollTop: $("#home").position().top}, 1000);
-				break;
 			case 'cdev':
-				$("html, body").animate({scrollTop: $("#first").position().top}, 1000);
-				$("#"+id).css({"color":"rgba(255,65,0,0.8)"});
-				$("a:not(#cdev)").css({"color":"white"});
-				return true;
-				break;
-			case 'ydev':
-				$("html, body").animate({scrollTop: $("#second").position().top}, 1000);
-				$("#"+id).css({"color":"rgba(255,65,0,0.8)"});
-				$("a:not(#ydev)").css({"color":"white"});
-				return true;
-				break;
-			case 'health':
-				$("html, body").animate({scrollTop: $("#third").position().top}, 1000);
-				$("#"+id).css({"color":"rgba(255,65,0,0.8)"});
-				$("a:not(#health)").css({"color":"white"});
-				return true;
-				break;
-			case 'itc':
-				$("html, body").animate({scrollTop: $("#fourth").position().top}, 1000);
-				$("#"+id).css({"color":"rgba(255,65,0,0.8)"});
-				$("a:not(#itc)").css({"color":"white"});
-				return true;
-				break;
-			default:
-				console.log("wrong clicked item!");
-				break;
+			console.log("clicked comm dev!");
+			$("html, body").animate({scrollTop: $("#Community_Design").position().top-150}, 1000);
+			$("#"+id).css({"color":"rgba(255,65,0,0.8)"});
+			$("a:not(#cdev)").css({"color":"white"});
+			return true;
+			break;
+		default:
+			break;
 		}
+		
+
 	});
 
-	function animateHiddenDiv(e){
-		e.preventDefault();
-		console.log("Animate hidden div");
+	function setHiddenDiv(id){
+		entities.forEach(function(element, index, array){
+			if(id == element){
+				var obj = jsonDataObj[index];
+				$("#name").text(obj.Practitioner);
+					$("#years").text(obj.Decade);
+					$("#fields").text(obj.Field);
+					$("#quotes").text(obj.Quotes);
+					$("#aboutPerson").text(obj.About);
+					$("#connections").text(obj.Connections);
+					animateHiddenDiv();
+			}
+		});
+	}
+
+	var makeClickable = function(name){
+		name.addClass("hovered");
+		console.log("Making clickable");
+
+		if(name == 'pathsGroup'){ //This is not working 
+			console.log("pathsgorup!");
+			saul.attr({strokeWidth: 4});
+		}
+	}
+
+	$('#close').click(function(){
+		$('#popupDiv').slideUp(2000);
+	})
+
+	function animateHiddenDiv(){
 
 		if($('#popupDiv').is(":visible")){
-			console.log("div visible");
-			$('#popupDiv').slideUp(2000);
 		} else { 
-			console.log("div gone");
 			$('#popupDiv').slideDown(2000);
 		}
 	}
 
-	// $(window).scroll(function(){
-	// 	// console.log("Scrolling!");
-	// 	console.log("Scrolling at "+$(window).scrollTop() + " "+$("#first").offset().top);
-	// 	if( (($(window).scrollTop()+120) > $("#first").offset().top) && ($(window).scrollTop() < $("#second").offset().top) ){
-	// 		console.log("Hit community design!");
-	// 		$("#cdev").css({"color":"rgba(255,65,0,0.8)"});
-	// 		$("a:not(#cdev)").css({"color":"white"});
-	// 	} else if((($(window).scrollTop()+120) > $("#second").offset().top) && ($(window).scrollTop() < $("#third").offset().top)) {
-	// 		console.log("Hit youth design!");
-	// 		$("#ydev").css({"color":"rgba(255,65,0,0.8)"});
-	// 		$("a:not(#ydev)").css({"color":"white"});
-	// 	}else if((($(window).scrollTop()+120) > $("#third").offset().top) && ($(window).scrollTop() < $("#fourth").offset().top)){
-	// 		console.log("Hit health!");
-	// 		$("#health").css({"color":"rgba(255,65,0,0.8)"});
-	// 		$("a:not(#health)").css({"color":"white"});
-	// 	}else if(($(window).scrollTop()+120) > $("#fourth").offset().top){
-	// 		console.log("Hit itc!");
-	// 		$("#itc").css({"color":"rgba(255,65,0,0.8)"});
-	// 		$("a:not(#itc)").css({"color":"white"});
-	// 	} else $('a').css({"color":"white"});
-	// });
 
 });
