@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$("#popupDiv").slideUp(10);
 
 	var offsetvar = 1; 
-	var entities =["arnstein", "davidoff", "krumholz", "alinsky", "linn", "halprin", "curry","arch", "arc", "and", "acd", "sanoff", "hester", "francis", "hamdi", "hou","prcdn", "lynch", "hart", "moore", "chawla", "driskell","miginc", "crtc", "la21", "unicef", "symposium","freie", "chambers","sussex","unrisd","worldbank","undp","donors","icae", "pria" ,"sewa","grameen","fals-borda","opp-rti", "whyte", "minkler", "wallerstein","cbpr", "drsconference","njmf","demos","utopia","due", "xerox","florence","atproject", "cpsr","pdc", "psp", "ehn", "atelier" , "sanders"];
+	var entities =["arnstein", "davidoff", "krumholz", "alinsky", "linn", "halprin", "curry","arch", "arc", "and", "acd", "sanoff", "hester", "francis", "hamdi", "hou","prpcdn", "lynch", "hart", "moore", "chawla", "driskell","miginc", "crtc", "la21", "unicef", "symposium","freie", "chambers","sussex","unrisd","worldbank","undp","donors","icae", "pria" ,"sewa","grameen","fals-borda","opp-rti", "whyte", "minkler", "wallerstein","cbpr", "drsconference","njmf","demos","utopia","due", "xerox","florence","atproject", "cpsr","pdc", "psp", "ehn", "atelier" , "sanders"];
 	var peopleInfo;
 	var jsonDataObj;
 
@@ -24,10 +24,8 @@ $(document).ready(function(){
 	$('li').click(function(){
 		var classname = $(this).attr('class');
 
-		// if(classname == 'people hovered'){
 			var id = $(this).attr('id');
 			setDetailsDiv(id, entities);
-		// }
 
 	});
 
@@ -37,6 +35,16 @@ $(document).ready(function(){
 		// console.log("ID is "+id);
 
 		switch(id){
+			case 'alphabetical':
+				console.log("Clicked alpha!");
+				$(".category").css({"visibility":"gone"});
+				$(".alphabetical").css({"visibility":"visible"});
+				break;
+			case 'category':
+				console.log("Clicked category!");
+				$(".alphabetical").css({"visibility":"gone"});
+				$(".category").css({"visibility":"visible"});
+				break;
 			default:
 				console.log("wrong clicked item!");
 				break;

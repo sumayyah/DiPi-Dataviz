@@ -2,20 +2,27 @@ $(document).ready(function(){
 
 	console.log("Ready!");
 	$("#popupDiv").slideUp(10);
+	var entities =["arnstein", "davidoff", "krumholz", "alinsky", "linn", "halprin", "curry","arch", "arc", "and", "acd", "sanoff", "hester", "francis", "hamdi", "hou","prpcdn", "lynch", "hart", "moore", "chawla", "driskell","miginc", "crtc", "la21", "unicef", "symposium","freie", "chambers","sussex","unrisd","worldbank","undp","donors","icae", "pria" ,"sewa","grameen","fals-borda","opp-rti", "whyte", "minkler", "wallerstein","cbpr", "drsconference","njmf","demos","utopia","due", "xerox","florence","atproject", "cpsr","pdc", "psp", "ehn", "atelier" , "sanders"];
+
+	var jsonDataObj;
+
+	jQuery.getJSON("materials/entities_info_nospace.json", function(data){
+		console.log("Got file data!");
+		jsonDataObj = data.items;
+		var firstname = data.items[0].Practitioner;
+		console.log("First name is: "+firstname);
+	});
 
 	/***** ANIMATE SVG *****/
 
 	var paper = Snap("#paper");
 
-	Snap.load("images/timeline_svg2_fullsize.svg", onSVGLoaded);
+	Snap.load("materials/timeline_svg2_fullsize.svg", onSVGLoaded);
 
 	var yearsGroup;
 	var entitiesGroup;
 	var pathsGroup;
 	var communityEntities;
-
-	var e1, e2, e3, e4, e5;
-	var c1, c2, c3, c4, c5;
 
 	var communityDesign;
 	var youthDevelopment;
@@ -23,8 +30,8 @@ $(document).ready(function(){
 	var publicHealth;
 	var technologyDevelopment;
 
-	var person;
-
+	var communityEntityArray;
+	var entityArray;
 
 
 	function onSVGLoaded(svgFile){
@@ -37,9 +44,7 @@ $(document).ready(function(){
 
 		var communityDesign = whole.select("#Community_Design");
 		var communityEntities = communityDesign.select("#Entities_1_");
-		person = communityEntities.select(".name");
-
-		console.log(person);
+		communityEntityArray = communityEntities.selectAll(".name");
 
 		entitiesGroup = whole.select("#Entities");
 		pathsGroup = whole.select("#Connections");
@@ -49,24 +54,53 @@ $(document).ready(function(){
 		communityEntities.hover(makeClickable(communityEntities));
 		pathsGroup.hover(makeClickable(pathsGroup));
 
-		// person.click(function(){
-		// 	// var id = $(this).attr('id');
-		// 	// var id2 = $(this).get('node').attr('attributes')[1];
-		// 	// console.log("clicked "+id+" "+id2);
-		// 	console.log("clicked person");
-		// });
-
-		//Attach click listener to parent, get ID of child clicked
-		communityEntities.click(function(){
-			var id = $(this).attr('id');
-			// console.log("Clicked on community entity "+id);
-		})
+		//Attach click listener to parent array, get ID of child clicked
+		communityEntityArray.forEach(function(element, index, array){
+			element.click(function(){
+				var id=element.attr('id');
+				console.log("clicked "+id);
+				setHiddenDiv(id);
+			});
+		});
 
 		//Add to DOM
 		paper.append(svgFile);
 	}
 
+	$('a').click(function(e){
+		var id = $(this).attr('id');
+		console.log("Clicked link");
 
+		switch(id){
+			case 'cdev':
+			console.log("clicked comm dev!");
+			$("html, body").animate({scrollTop: $("#Community_Design").position().top-150}, 1000);
+			$("#"+id).css({"color":"rgba(255,65,0,0.8)"});
+			$("a:not(#cdev)").css({"color":"white"});
+			return true;
+			break;
+		default:
+			break;
+		}
+		
+
+	});
+
+	function setHiddenDiv(id){
+		entities.forEach(function(element, index, array){
+			if(id == element){
+				console.log("Matched "+element+" and "+id);
+				var obj = jsonDataObj[index];
+				$("#name").text(obj.Practitioner);
+					$("#years").text(obj.Decade);
+					$("#fields").text(obj.Field);
+					$("#quotes").text(obj.Quotes);
+					$("#aboutPerson").text(obj.About);
+					$("#connections").text(obj.Connections);
+					animateHiddenDiv();
+			}
+		});
+	}
 
 	var makeClickable = function(name){
 		name.addClass("hovered");
@@ -95,15 +129,17 @@ $(document).ready(function(){
 		yearsGroup.animate({transform: 's1r0,150,150'}, 1000, mina.bounce);
 	}
 
+	$('#close').click(function(){
+		console.log("clicked close");
+		$('#popupDiv').slideUp(2000);
+	})
 
-
-	function animateHiddenDiv(e){
-		e.preventDefault();
+	function animateHiddenDiv(){
 		console.log($("#popupDiv").css("visibility"));
 
 		if($('#popupDiv').is(":visible")){
 			console.log("div visible");
-			$('#popupDiv').slideUp(2000);
+			// $('#popupDiv').slideUp(2000);
 		} else { 
 			console.log("div gone");
 			$('#popupDiv').slideDown(2000);

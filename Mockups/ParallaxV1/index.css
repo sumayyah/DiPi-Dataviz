@@ -23,17 +23,23 @@ nav{
 	font-size: 100%;
 }
 
-nav ul{
+#menu ul{
 	list-style: none;
 	margin-right: 5%;
 
 }
-nav ul li{
+#menu ul li{
 	display: block;
 	position: relative;
 	float: right;
 	padding: 6px;
 	margin-top: 2%;
+}
+#titleBar ul li{
+	display: block;
+	color:white;
+}#subtitle{
+	color: white;
 }
 a{
 	text-decoration: none;
@@ -42,7 +48,6 @@ a{
 a:not(#title){
 
 	text-transform: lowercase;
-	
 	font-size: 0.75em;
 }
 a:visited, a:hover{

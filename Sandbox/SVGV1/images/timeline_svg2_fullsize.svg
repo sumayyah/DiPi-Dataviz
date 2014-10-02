@@ -346,7 +346,7 @@
 		<g id="alinsky" class="name">
 			<text transform="matrix(1 0 0 1 131.9604 143.0151)"><tspan x="0" y="0" fill="#232120" font-family="'HelveticaNeue'" font-size="10">Saul Alinsky</tspan><tspan x="0" y="14.4" fill="#B5B6B6" font-family="'HelveticaNeue'" font-size="10">1960s to 1990s</tspan></text>
 		</g>
-		<g>
+		<g id="prpcdn" class="name">
 			<text transform="matrix(1 0 0 1 906.6094 226.1714)"><tspan x="0" y="0" fill="#232120" font-family="'HelveticaNeue-Italic'" font-size="10">Pacific Rim Participatory </tspan><tspan x="0" y="14.4" fill="#232120" font-family="'HelveticaNeue-Italic'" font-size="10">Community Design Conference </tspan><tspan x="0" y="28.8" fill="#B4B5B5" font-family="'HelveticaNeue-Italic'" font-size="10">1998 to Present</tspan></text>
 		</g>
 		<g id="davidoff" class="name">
@@ -355,42 +355,46 @@
 		<g id="hester" class="name">
 			<text transform="matrix(1 0 0 1 491.2622 380.3228)"><tspan x="0" y="0" font-family="'HelveticaNeue'" font-size="9">Randy Hester</tspan><tspan x="0" y="14.4" fill="#B4B5B5" font-family="'HelveticaNeue'" font-size="9">1970s to Present</tspan></text>
 		</g>
-		<g>
+		<g id="and" class="name">
 			<text transform="matrix(1 0 0 1 382.7974 201.1714)"><tspan x="0" y="0" font-family="'HelveticaNeue-Italic'" font-size="10">Asian </tspan><tspan x="0" y="12.756" font-family="'HelveticaNeue-Italic'" font-size="10">Neighborhood </tspan><tspan x="0" y="25.512" font-family="'HelveticaNeue-Italic'" font-size="10">Design </tspan><tspan x="0" y="39.912" fill="#B5B6B6" font-family="'HelveticaNeue-Italic'" font-size="10">1973 to Present</tspan></text>
 		</g>
-		<g>
+		<g id="halprin" class="name">
 			<text transform="matrix(1 0 0 1 304.4141 363.396)"><tspan x="0" y="0" font-family="'HelveticaNeue'" font-size="10">Lawrence Halprin</tspan><tspan x="0" y="14.4" fill="#B5B6B6" font-family="'HelveticaNeue'" font-size="10">1960s to 2000s</tspan></text>
 		</g>
-		<g>
+		<g id="acd" class="name">
 			<text transform="matrix(1 0 0 1 434.6475 122.9087)"><tspan x="0" y="0" font-family="'HelveticaNeue-Italic'" font-size="10">Association for </tspan><tspan x="0" y="12.756" font-family="'HelveticaNeue-Italic'" font-size="10">Community </tspan><tspan x="0" y="25.512" font-family="'HelveticaNeue-Italic'" font-size="10">Design Inc. </tspan><tspan x="0" y="39.912" fill="#B5B6B6" font-family="'HelveticaNeue-Italic'" font-size="10">1977 to Present</tspan></text>
 		</g>
-		<g>
+		<g id="sanoff" class="name">
 			<text transform="matrix(1 0 0 1 302.2959 434.811)"><tspan x="0" y="0" font-family="'HelveticaNeue'" font-size="10">Henry Sanoff</tspan><tspan x="0" y="14.4" fill="#B4B5B5" font-family="'HelveticaNeue'" font-size="10">1960s to Present</tspan></text>
 		</g>
-		<g>
+		<g id="curry" class="name">
 			<text transform="matrix(1 0 0 1 210.2617 246.4116)"><tspan x="0" y="0" font-family="'HelveticaNeue'" font-size="10">Rex Curry</tspan><tspan x="0" y="14.4" fill="#B5B6B6" font-family="'HelveticaNeue'" font-size="10">1960s to</tspan><tspan x="0" y="28.8" fill="#B5B6B6" font-family="'HelveticaNeue'" font-size="10">2000s</tspan></text>
 		</g>
-		<g>
+		<g id="hamdi" class="name">
 			<text transform="matrix(1 0 0 1 669.7324 473.481)"><tspan x="0" y="0" fill="#232120" font-family="'HelveticaNeue'" font-size="10">Nabeel Hamdi</tspan><tspan x="0" y="14.4" fill="#B4B5B5" font-family="'HelveticaNeue'" font-size="10">1980s to Present</tspan></text>
 		</g>
-		<g>
+		<g id="miginc" class="name">
 			<text transform="matrix(1 0 0 1 609.4141 432.0688)"><tspan x="0" y="0" font-family="'HelveticaNeue-Italic'" font-size="10">MIG Inc.</tspan><tspan x="0" y="14.4" fill="#B4B5B5" font-family="'HelveticaNeue-Italic'" font-size="10">1980s to Present</tspan></text>
 		</g>
-		<g>
+		<g id="arnstein" class="name">
 			<text transform="matrix(1 0 0 1 281.2944 544.1606)"><tspan x="0" y="0" font-family="'HelveticaNeue'" font-size="10">Sherry Arnstein</tspan><tspan x="0" y="14.4" fill="#B4B5B5" font-family="'HelveticaNeue'" font-size="10">1960s to 1970s</tspan></text>
 		</g>
-		<text transform="matrix(1 0 0 1 600.4141 395.8872)"><tspan x="0" y="0" fill="#232120" font-family="'HelveticaNeue'" font-size="10">Mark Francis</tspan><tspan x="0" y="14.4" fill="#B4B5B5" font-family="'HelveticaNeue'" font-size="10">1980s to 2000s</tspan></text>
-		<g>
+		<g id="francis" class="name">
+			<text transform="matrix(1 0 0 1 600.4141 395.8872)"><tspan x="0" y="0" fill="#232120" font-family="'HelveticaNeue'" font-size="10">Mark Francis</tspan><tspan x="0" y="14.4" fill="#B4B5B5" font-family="'HelveticaNeue'" font-size="10">1980s to 2000s</tspan></text>
+		</g>
+		<g id="hou" class="name">
 			<text transform="matrix(1 0 0 1 863.9531 340.1724)"><tspan x="0" y="0" font-family="'HelveticaNeue'" font-size="10">Jeffrey Hou</tspan><tspan x="0" y="14.4" fill="#B4B5B5" font-family="'HelveticaNeue'" font-size="10">1990s to Present</tspan></text>
 		</g>
-		<text transform="matrix(1 0 0 1 130.8032 434.4204)"><tspan x="0" y="0" fill="#232120" font-family="'HelveticaNeue'" font-size="10">Karl Linn</tspan><tspan x="0" y="14.4" fill="#B4B5B5" font-family="'HelveticaNeue'" font-size="10">1960s to</tspan><tspan x="0" y="28.8" fill="#B4B5B5" font-family="'HelveticaNeue'" font-size="10">1990s</tspan></text>
-		<g>
+		<g id="linn" class= "name">
+			<text transform="matrix(1 0 0 1 130.8032 434.4204)"><tspan x="0" y="0" fill="#232120" font-family="'HelveticaNeue'" font-size="10">Karl Linn</tspan><tspan x="0" y="14.4" fill="#B4B5B5" font-family="'HelveticaNeue'" font-size="10">1960s to</tspan><tspan x="0" y="28.8" fill="#B4B5B5" font-family="'HelveticaNeue'" font-size="10">1990s</tspan></text>
+		</g>
+		<g id="arch" class="name">
 			<text transform="matrix(1 0 0 1 198.3208 339.6362)"><tspan x="0" y="0" font-family="'HelveticaNeue-Italic'" font-size="10">Architectural </tspan><tspan x="0" y="12.756" font-family="'HelveticaNeue-Italic'" font-size="10">Renewal </tspan><tspan x="0" y="25.512" font-family="'HelveticaNeue-Italic'" font-size="10">Committee in </tspan><tspan x="0" y="38.268" font-family="'HelveticaNeue-Italic'" font-size="10">Harlem (ARCH)</tspan><tspan x="0" y="52.668" fill="#B5B6B6" font-family="'HelveticaNeue'" font-size="10">1963 to 1970s</tspan></text>
 		</g>
-		<g>
+		<g id="arc" class="name">
 			<text transform="matrix(1 0 0 1 132.9741 224.4097)"><tspan x="0" y="0" font-family="'HelveticaNeue-Italic'" font-size="10">Architecture</tspan><tspan x="0" y="12.756" font-family="'HelveticaNeue-Italic'" font-size="10">Research</tspan><tspan x="0" y="25.512" font-family="'HelveticaNeue-Italic'" font-size="10">Construction </tspan><tspan x="0" y="38.268" font-family="'HelveticaNeue-Italic'" font-size="10">(ARC) </tspan><tspan x="0" y="52.668" fill="#B5B6B6" font-family="'HelveticaNeue'" font-size="10">1960s to</tspan><tspan x="0" y="67.068" fill="#B5B6B6" font-family="'HelveticaNeue'" font-size="10">Present</tspan></text>
 		</g>
-		<g>
+		<g id="krumholz" class="name">
 			<text transform="matrix(1 0 0 1 280.7002 306.2827)"><tspan x="0" y="0" font-family="'HelveticaNeue'" font-size="10">Norman Krumholz</tspan><tspan x="0" y="14.4" fill="#B5B6B6" font-family="'HelveticaNeue'" font-size="10">1960s to Present</tspan></text>
 		</g>
 	</g>

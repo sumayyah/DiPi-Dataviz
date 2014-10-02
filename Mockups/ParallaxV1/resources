@@ -89,42 +89,7 @@ h1{
 .hovered{
 	cursor: pointer;
 }
-.category{
-	visibility: hidden;
-}
-.alphabetical{
-	visibility: visible;
-}
-/***************INFO PANEL******************/
 
-#popupDiv{
-	bottom: 0px;
-	/*visibility: hidden;*/
-	/*display: none;*/
-
-	position: fixed;
-	width: 100%;
-	height: 200px;
-	background-color: #DEDEDE;
-	color: black;
-	display: flex;
-	justify-content:center;
-	padding: 10px;
-	overflow: auto;
-} 
-.column{
-	width: 300px;
-	font-size: 0.75em;
-}.column .name{
-	color: rgba(255,65,0,0.8);
-}.column h4, .column h6{
-	font-size: 1em;
-} 
-#popupDiv h1{
-	font-size: 6em;
-	color: black;
-	text-align: left;
-}
 
 /***************FOOTER****************/
 footer{
