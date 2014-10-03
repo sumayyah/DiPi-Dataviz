@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	console.log("Ready!");
 	$("#popupDiv").slideUp(10);
-	var entities =["arnstein", "davidoff", "krumholz", "alinsky", "linn", "halprin", "curry","arch", "arc", "and", "acd", "sanoff", "hester", "francis", "hamdi", "hou","prpcdn", "lynch", "hart", "moore", "chawla", "driskell","miginc", "crtc", "la21", "unicef", "symposium","freie", "chambers","sussex","unrisd","worldbank","undp","donors","icae", "pria" ,"sewa","grameen","fals-borda","opp-rti", "whyte", "minkler", "wallerstein","cbpr", "drsconference","njmf","demos","utopia","due", "xerox","florence","atproject", "cpsr","pdc", "psp", "ehn", "atelier" , "sanders"];
+	var entityNames =["arnstein", "davidoff", "krumholz", "alinsky", "linn", "halprin", "curry","arch", "arc", "and", "acd", "sanoff", "hester", "francis", "hamdi", "hou","prpcdn", "lynch", "hart", "moore", "chawla", "driskell","miginc", "crc", "la21", "unicef_irc", "cpcs","freire", "chambers","isd","unrisd","worldbank","undp","donors","icae", "pria" ,"sewa","grameen","fals-borda","opp-rti", "whyte", "minkler", "wallerstein","cbpr", "drsconference","njmf","demos","due","utopia", "xerox","florence","atproject", "cpsr","pdc", "psp", "ehn", "atelier" , "sanders","guc_1_","guc"];
 
 	var jsonDataObj;
 
@@ -17,12 +17,11 @@ $(document).ready(function(){
 
 	var paper = Snap("#paper");
 
-	Snap.load("materials/timeline_svg2_fullsize.svg", onSVGLoaded);
+	Snap.load("materials/timeline2.svg", onSVGLoaded);
 
 	var yearsGroup;
 	var entitiesGroup;
 	var pathsGroup;
-	var communityEntities;
 
 	var communityDesign;
 	var youthDevelopment;
@@ -30,8 +29,8 @@ $(document).ready(function(){
 	var publicHealth;
 	var technologyDevelopment;
 
-	var communityEntityArray;
 	var entityArray;
+	var entities,entities1,entities2,entities3, entities4;
 
 
 	function onSVGLoaded(svgFile){
@@ -42,26 +41,31 @@ $(document).ready(function(){
 		
 		var whole = svgFile.select("#Layer1");
 
-		var communityDesign = whole.select("#Community_Design");
-		var communityEntities = communityDesign.select("#Entities_1_");
-		communityEntityArray = communityEntities.selectAll(".name");
+		communityDesign = whole.select("#Community_Design");
+		youthDevelopment = whole.select("#Youth_Development");
+		internationalDevelopment = whole.select("#International_Development");
+		publicHealth = whole.select("#Public_Health");
+		technologyDevelopment = whole.select("#Technology_Development");
 
-		entitiesGroup = whole.select("#Entities");
+		entityArray = whole.selectAll(".name");
+
+		entities = whole.select("#Entities");
+		entities1 = whole.select("#Entities_1_");
+		entities2 = whole.select("#Entities_2_");
+		entities3 = whole.select("#Entities_3_");
+		entities4 = whole.select("#Entities_4_");
+
+		entitiesGroup = whole.group(entities, entities1, entities2, entities3, entities4);
 		pathsGroup = whole.select("#Connections");
 
 		// //Change cursor to indicate clickability
 		entitiesGroup.hover(makeClickable(entitiesGroup));
-		communityEntities.hover(makeClickable(communityEntities));
 		pathsGroup.hover(makeClickable(pathsGroup));
-
-		//Attach click listener to parent array, get ID of child clicked
-		communityEntityArray.forEach(function(element, index, array){
+		
+		entityArray.forEach(function(element, index, array){
 			element.click(function(){
-				var text = element.selectAll("#text");
-				var id=element.attr('id');
-				$("*").removeClass('clicked');
-				console.log("clicked "+id);
-				text.addClass('clicked');
+				var id = element.attr('id');
+				console.log('clicked '+id);
 				setHiddenDiv(id);
 			});
 		});
@@ -75,13 +79,47 @@ $(document).ready(function(){
 
 		switch(id){
 			case 'cdev':
-			console.log("clicked comm dev!");
-			$("html, body").animate({scrollTop: $("#Community_Design").position().top-150}, 1000);
-			$("#"+id).css({"color":"rgba(255,65,0,0.8)"});
-			$("a:not(#cdev)").css({"color":"white"});
-			return true;
+				console.log("clicked comm dev!");
+				$("html, body").animate({scrollTop: $("#Community_Design").position().top-150}, 1000);
+				$("#"+id).css({"color":"rgba(255,65,0,0.8)"});
+				$("a:not(#cdev)").css({"color":"white"});
+				return true;
 			break;
+
+			case 'ydev':
+				console.log("clicked youth!");
+				$("html, body").animate({scrollTop: $("#Youth_Development").position().top-150}, 1000);
+				$("#"+id).css({"color":"rgba(255,65,0,0.8)"});
+				$("a:not(#ydev)").css({"color":"white"});
+				return true;
+			break;
+
+			case 'iDev':
+				console.log("clicked international dev!");
+				$("html, body").animate({scrollTop: $("#International_Development").position().top-150}, 1000);
+				$("#"+id).css({"color":"rgba(255,65,0,0.8)"});
+				$("a:not(#iDev)").css({"color":"white"});
+				return true;
+			break;
+
+			case 'health':
+				console.log("clicked health!");
+				$("html, body").animate({scrollTop: $("#Public_Health").position().top-150}, 1000);
+				$("#"+id).css({"color":"rgba(255,65,0,0.8)"});
+				$("a:not(#health)").css({"color":"white"});
+				return true;
+			break;
+
+			case 'tech':
+				console.log("clicked tech!");
+				$("html, body").animate({scrollTop: $("#Technology_Development").position().top-150}, 1000);
+				$("#"+id).css({"color":"rgba(255,65,0,0.8)"});
+				$("a:not(#tech)").css({"color":"white"});
+				return true;
+			break;
+
 		default:
+			console.log("Clicked on something else :(");
 			break;
 		}
 		
@@ -89,8 +127,10 @@ $(document).ready(function(){
 	});
 
 	function setHiddenDiv(id){
-		entities.forEach(function(element, index, array){
+
+		entityNames.forEach(function(element, index, array){
 			if(id == element){
+				console.log("Matched "+id+" and "+element);
 				var obj = jsonDataObj[index];
 				$("#name").text(obj.Practitioner);
 					$("#years").text(obj.Decade);
@@ -98,6 +138,7 @@ $(document).ready(function(){
 					$("#quotes").text(obj.Quotes);
 					$("#aboutPerson").text(obj.About);
 					$("#connections").text(obj.Connections);
+					$("#publications").text(obj.Publications);
 					animateHiddenDiv();
 			}
 		});
