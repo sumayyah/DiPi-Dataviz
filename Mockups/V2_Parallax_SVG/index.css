@@ -10,9 +10,10 @@ body{
     font-weight: 300;
 
 }
-svg{
-	width: 100%;
-	padding: 100px;
+#wrapper{
+	width: 1154px;
+	margin-right: auto;
+	margin-left: auto;
 }
 /**************NAVIGATION********/
 nav{
@@ -150,6 +151,12 @@ h1{
 	-moz-box-shadow: 0px -3px 3px 0 #ccc;
 	-webkit-box-shadow: 0px -3px 3px 0 #ccc;
 	box-shadow: 0px -3px 3px 0 #ccc;
+}
+#col4 span{
+	display: block;
+}#globe{
+	vertical-align: sub;
+	margin-top: 50px;
 }
 
 /***************FOOTER****************/

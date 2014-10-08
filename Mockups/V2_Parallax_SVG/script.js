@@ -63,16 +63,30 @@ $(document).ready(function(){
 		pathsGroup.hover(makeClickable(pathsGroup));
 		
 		entityArray.forEach(function(element, index, array){
+			var id = element.attr('id');
+			var text = element.selectAll('text');
+
 			element.click(function(){
-				var id = element.attr('id');
 				console.log('clicked '+id);
 				setHiddenDiv(id);
 			});
+
+			element.hover(function(){
+				text.forEach(function(textEl, textIndex, textArray){
+					textEl.attr({fill: "rgba(255,65,0,0.8)"});
+				})
+			}, function(){
+				text.forEach(function(textEl, textIndex, textArray){
+					textEl.attr({fill: "#000"});
+				})
+			})
+
 		});
 
 		//Add to DOM
 		paper.append(svgFile);
 	}
+
 
 	$('a').click(function(e){
 		var id = $(this).attr('id');
@@ -131,7 +145,9 @@ $(document).ready(function(){
 		entityNames.forEach(function(element, index, array){
 			if(id == element){
 				console.log("Matched "+id+" and "+element);
+
 				var obj = jsonDataObj[index];
+				console.log("Country "+obj.Country);
 				$("#name").text(obj.Practitioner);
 					$("#years").text(obj.Decade);
 					$("#fields").text(obj.Field);
@@ -139,6 +155,16 @@ $(document).ready(function(){
 					$("#aboutPerson").text(obj.About);
 					$("#connections").text(obj.Connections);
 					$("#publications").text(obj.Publications);
+					if(obj.Country.search("USA")>-1){
+						console.log("Country is usa!"+obj.Country);
+						$("#globe img").attr('src', 'materials/Map_US.png');
+					} else {
+						console.log("Not USA :(");
+							// $("#globe img").css({"display":"none"});
+							$("#globe img").attr('src', "");
+						// var mapImg = document.getElementById('globe');
+						// mapImg.parentNode.removeChild(mapImg);
+					}
 					animateHiddenDiv();
 			}
 		});
@@ -158,12 +184,24 @@ $(document).ready(function(){
 		$('#popupDiv').slideUp(2000);
 	})
 
+	function setCountry(country){
+
+	}
 	function animateHiddenDiv(){
 
 		if($('#popupDiv').is(":visible")){
 		} else { 
 			$('#popupDiv').slideDown(2000);
 		}
+	}
+
+	function inHover(element){
+		console.log("In hover "+element.attr('id'));
+		// element.attr({fill:"#f00"});
+	}
+	function outHover(element){
+		console.log("Out hover"+element.attr('id'));
+		element.attr({fill: "#fff"});
 	}
 
 

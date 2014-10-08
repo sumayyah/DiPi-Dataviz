@@ -50,7 +50,7 @@ a:visited, a:hover{
 	text-decoration: none;
 }
 
-h1{
+nav h1{
 	font-family: 'Rosario', sans-serif;
 	font-weight: 300;
 	font-size: 200%;
@@ -63,15 +63,34 @@ h1{
 /***************CONTENT*********************/
 
 #content{
-	width: 100%;
+	width: 75%;
 	height: 100%;
 	margin-top: 150px;
 	padding-left: 50px;
 	color: black;
+	margin-left: auto;
+	margin-right: auto;
 }
-
-#content ul{
+#content ul, #content li{
 	list-style: none;
+	margin: none;
+}
+#content ul{
+	overflow: hidden;
+	padding: none;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+#content ul li{
+	float: left;
+}
+#content ul li img{
+	display: block;
+	margin-right: 3em;
+	margin-bottom: 3em;
+}
+#content ul li img:hover{
+	cursor: pointer;
 }
 #content a{
 	color: black;
@@ -80,8 +99,8 @@ h1{
 .hovered{
 	cursor: pointer;
 }
-.section{
-	width: 100%;
+#content h1{
+	display: block;	
 }
 
 
