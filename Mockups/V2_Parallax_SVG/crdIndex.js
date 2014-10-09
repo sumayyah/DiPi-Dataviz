@@ -68,6 +68,17 @@ $(document).ready(function(){
 					$("#quotes").text(obj.Quotes);
 					$("#aboutPerson").text(obj.About);
 					$("#connections").text(obj.Connections);
+					$("#publications").text(obj.Publications);
+					if(obj.Country.search("USA")>-1){
+						console.log("Country is usa!"+obj.Country);
+						$("#globe img").attr('src', 'materials/Map_US.png');
+					} else {
+						console.log("Not USA :(");
+							// $("#globe img").css({"display":"none"});
+							$("#globe img").attr('src', "");
+						// var mapImg = document.getElementById('globe');
+						// mapImg.parentNode.removeChild(mapImg);
+					}
 					animateDiv();
 				}
 			});

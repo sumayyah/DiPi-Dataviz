@@ -66,10 +66,9 @@ nav h1{
 	width: 75%;
 	height: 100%;
 	margin-top: 150px;
-	padding-left: 50px;
 	color: black;
-	margin-left: auto;
-	margin-right: auto;
+	padding: 2%;
+
 }
 #content ul, #content li{
 	list-style: none;
@@ -101,6 +100,19 @@ nav h1{
 }
 #content h1{
 	display: block;	
+}
+.separator{
+	border: 0;
+	height: 0;
+	width: 75%;
+	margin-bottom: 2em;
+	border-top: 1px solid rgba(0,0,0,1);
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+
+	-moz-border-bottom-colors: rgba(255,255,255,0.3);
+    -moz-border-left-colors: rgba(0,0,0,1);
+    -moz-border-right-colors: rgba(0,0,0,1);
+    -moz-border-top-colors: rgba(0,0,0,1);
 }
 
 
