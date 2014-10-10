@@ -73,7 +73,7 @@ $(document).ready(function(){
 
 			element.hover(function(){
 				text.forEach(function(textEl, textIndex, textArray){
-					textEl.attr({fill: "rgba(255,65,0,0.8)"});
+					textEl.attr({fill: "#D39C2A"});
 				})
 			}, function(){
 				text.forEach(function(textEl, textIndex, textArray){
@@ -95,7 +95,7 @@ $(document).ready(function(){
 			case 'cdev':
 				console.log("clicked comm dev!");
 				$("html, body").animate({scrollTop: $("#Community_Design").position().top-150}, 1000);
-				$("#"+id).css({"color":"rgba(255,65,0,0.8)"});
+				$("#"+id).css({"color":"#D39C2A"});
 				$("a:not(#cdev)").css({"color":"white"});
 				return true;
 			break;
@@ -103,7 +103,7 @@ $(document).ready(function(){
 			case 'ydev':
 				console.log("clicked youth!");
 				$("html, body").animate({scrollTop: $("#Youth_Development").position().top-150}, 1000);
-				$("#"+id).css({"color":"rgba(255,65,0,0.8)"});
+				$("#"+id).css({"color":"#D39C2A"});
 				$("a:not(#ydev)").css({"color":"white"});
 				return true;
 			break;
@@ -111,7 +111,7 @@ $(document).ready(function(){
 			case 'iDev':
 				console.log("clicked international dev!");
 				$("html, body").animate({scrollTop: $("#International_Development").position().top-150}, 1000);
-				$("#"+id).css({"color":"rgba(255,65,0,0.8)"});
+				$("#"+id).css({"color":"#D39C2A"});
 				$("a:not(#iDev)").css({"color":"white"});
 				return true;
 			break;
@@ -119,7 +119,7 @@ $(document).ready(function(){
 			case 'health':
 				console.log("clicked health!");
 				$("html, body").animate({scrollTop: $("#Public_Health").position().top-150}, 1000);
-				$("#"+id).css({"color":"rgba(255,65,0,0.8)"});
+				$("#"+id).css({"color":"#D39C2A"});
 				$("a:not(#health)").css({"color":"white"});
 				return true;
 			break;
@@ -127,7 +127,7 @@ $(document).ready(function(){
 			case 'tech':
 				console.log("clicked tech!");
 				$("html, body").animate({scrollTop: $("#Technology_Development").position().top-150}, 1000);
-				$("#"+id).css({"color":"rgba(255,65,0,0.8)"});
+				$("#"+id).css({"color":"#D39C2A"});
 				$("a:not(#tech)").css({"color":"white"});
 				return true;
 			break;

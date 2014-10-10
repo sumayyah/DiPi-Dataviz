@@ -35,16 +35,7 @@ $(document).ready(function(){
 		// console.log("ID is "+id);
 
 		switch(id){
-			case 'alphabetical':
-				console.log("Clicked alpha!");
-				$(".category").css({"visibility":"gone"});
-				$(".alphabetical").css({"visibility":"visible"});
-				break;
-			case 'category':
-				console.log("Clicked category!");
-				$(".alphabetical").css({"visibility":"gone"});
-				$(".category").css({"visibility":"visible"});
-				break;
+
 			default:
 				console.log("wrong clicked item!");
 				break;
