@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 	var jsonDataObj;
 
-	jQuery.getJSON("materials/entities_info_nospace.json", function(data){
+	jQuery.getJSON("materials/entities_info_nospace2.json", function(data){
 		console.log("Got file data!");
 		jsonDataObj = data.items;
 		var firstname = data.items[0].Practitioner;
@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 	var paper = Snap("#paper");
 
-	Snap.load("materials/timeline2.svg", onSVGLoaded);
+	Snap.load("materials/timeline4.svg", onSVGLoaded);
 
 	var yearsGroup;
 	var entitiesGroup;
@@ -148,14 +148,14 @@ $(document).ready(function(){
 
 				var obj = jsonDataObj[index];
 				console.log("Country "+obj.Country);
-				$("#name").text(obj.Practitioner);
+				$("#name").text(obj.Name);
 					$("#years").text(obj.Decade);
 					$("#fields").text(obj.Field);
 					$("#quotes").text(obj.Quotes);
 					$("#aboutPerson").text(obj.About);
 					$("#connections").text(obj.Connections);
 					$("#publications").text(obj.Publications);
-					if(obj.Country.search("USA")>-1){
+					if(obj.Geography.search("USA")>-1){
 						console.log("Country is usa!"+obj.Country);
 						$("#globe img").attr('src', 'materials/Map_US.png');
 					} else {

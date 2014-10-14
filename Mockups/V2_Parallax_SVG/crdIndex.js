@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$("#popupDiv").slideUp(10);
 
 	var offsetvar = 1; 
-	var entities =["arnstein", "davidoff", "krumholz", "alinsky", "linn", "halprin", "curry","arch", "arc", "and", "acd", "sanoff", "hester", "francis", "hamdi", "hou","prpcdn", "lynch", "hart", "moore", "chawla", "driskell","miginc", "crtc", "la21", "unicef", "symposium","freie", "chambers","sussex","unrisd","worldbank","undp","donors","icae", "pria" ,"sewa","grameen","fals-borda","opp-rti", "whyte", "minkler", "wallerstein","cbpr", "drsconference","njmf","demos","utopia","due", "xerox","florence","atproject", "cpsr","pdc", "psp", "ehn", "atelier" , "sanders"];
+	var entities =["arnstein", "davidoff", "krumholz", "alinsky", "linn", "halprin", "curry","arch", "arc", "and", "acd", "sanoff", "hester", "francis", "hamdi", "hou","prcdn", "lynch", "hart", "moore", "chawla", "driskell","miginc", "crtc", "la21", "unicef", "symposium","freie", "chambers","sussex","unrisd","worldbank","undp","donors","icae", "spra" ,"sewa","grameen","fals-borda","opp-rti", "whyte", "minkler", "wallerstein","cbpr", "drsconference","njmf","demos","utopia","due", "xparc","florence","atproject", "cpsr","pdc", "psp", "ehn", "atelier" , "sanders"];
 	var peopleInfo;
 	var jsonDataObj;
 
@@ -14,7 +14,6 @@ $(document).ready(function(){
 		var firstname = data.items[0].Practitioner;
 		console.log("First name is: "+firstname);
 	});
-	console.log("Later...got file data");
 
 
 	$('li').mouseover(function(){
@@ -43,7 +42,6 @@ $(document).ready(function(){
 	});
 
 	$('#close').click(function(){
-		console.log("clicked close");
 		$('#popupDiv').slideUp(2000);
 	})
 
@@ -60,15 +58,12 @@ $(document).ready(function(){
 					$("#aboutPerson").text(obj.About);
 					$("#connections").text(obj.Connections);
 					$("#publications").text(obj.Publications);
+
 					if(obj.Country.search("USA")>-1){
-						console.log("Country is usa!"+obj.Country);
 						$("#globe img").attr('src', 'materials/Map_US.png');
 					} else {
-						console.log("Not USA :(");
-							// $("#globe img").css({"display":"none"});
+
 							$("#globe img").attr('src', "");
-						// var mapImg = document.getElementById('globe');
-						// mapImg.parentNode.removeChild(mapImg);
 					}
 					animateDiv();
 				}
@@ -76,12 +71,8 @@ $(document).ready(function(){
 	}
 
 	function animateDiv(){
-		// e.preventDefault();
-		// console.log($("#popupDiv").css("visibility"));
-
+	
 		if($('#popupDiv').is(":visible")){
-			console.log("div visible");
-			// $('#popupDiv').slideUp(2000);
 		} else { 
 			console.log("div gone");
 			$('#popupDiv').slideDown(2000);
