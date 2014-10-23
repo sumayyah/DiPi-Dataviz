@@ -73,6 +73,8 @@ h1{
 	justify-content: left;
 	padding-left: 50px;
 	color: black;
+
+	padding-bottom: 250px;
 }
 
 .content ul{
@@ -106,7 +108,7 @@ h1{
 .alphaheader{
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	font-size: 24.92px;
+	font-size: 1.5em;
 	color:#878989;
 	margin-bottom: 14px;
 	margin-top: 12px;
@@ -141,7 +143,9 @@ h1{
 	color: #D39C2A;
 	font-family: 'Lato';
 	font-weight: 300;
-}h2, h4{
+}
+
+h2, h4{
 	font-family: 'Lato';
 	font-weight: 400;
 	text-transform: uppercase;

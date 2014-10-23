@@ -2,15 +2,15 @@ $(document).ready(function(){
 
 	console.log("Ready!");
 	$("#popupDiv").slideUp(10);
-	var entityNames =["arnstein", "davidoff", "krumholz", "alinsky", "linn", "halprin", "curry","arch", "arc", "and", "acd", "sanoff", "hester", "francis", "hamdi", "hou","prpcdn", "lynch", "hart", "moore", "chawla", "driskell","miginc", "crc", "la21", "unicef_irc", "cpcs","freire", "chambers","isd","unrisd","worldbank","undp","donors","icae", "pria" ,"sewa","grameen","fals-borda","opp-rti", "whyte", "minkler", "wallerstein","cbpr", "drsconference","njmf","demos","due","utopia", "xerox","florence","atproject", "cpsr","pdc", "psp", "ehn", "atelier" , "sanders","guc_1_","guc"];
+
+	var entityNames =["arnstein", "davidoff", "krumholz", "alinsky", "linn", "halprin", "curry","arch", "arc", "and", "acd", "sanoff", "hester", "francis", "hamdi", "hou","prpcdn", "lynch","guc1", "hart", "moore", "chawla", "driskell","guc2","miginc", "crc", "la21", "unicef_irc", "cpcs","freire", "chambers","ids","uni","wb","undp","do","icae", "pria" ,"sewa","bank","fals-borda","opp-rti", "whyte", "minkler", "wallerstein","cbpr", "drscdp","njmfn","demoss","dued","utopiasd", "xparc","fp","atpd", "cpsr","pdc", "psp", "ehn", "ap" , "sanders"];
 
 	var jsonDataObj;
 
 	jQuery.getJSON("materials/entities_info_nospace2.json", function(data){
 		console.log("Got file data!");
 		jsonDataObj = data.items;
-		var firstname = data.items[0].Practitioner;
-		console.log("First name is: "+firstname);
+		
 	});
 
 	/***** ANIMATE SVG *****/
@@ -61,7 +61,7 @@ $(document).ready(function(){
 		// //Change cursor to indicate clickability
 		entitiesGroup.hover(makeClickable(entitiesGroup));
 		pathsGroup.hover(makeClickable(pathsGroup));
-		
+
 		entityArray.forEach(function(element, index, array){
 			var id = element.attr('id');
 			var text = element.selectAll('text');
@@ -142,12 +142,12 @@ $(document).ready(function(){
 
 	function setHiddenDiv(id){
 
-		entityNames.forEach(function(element, index, array){
-			if(id == element){
-				console.log("Matched "+id+" and "+element);
+		for(var i=0;i<jsonDataObj.length;i++){
+			var obj = jsonDataObj[i];
+			
+			if(id==obj.Tag){
+				console.log("Matched "+id+" and "+obj.Tag);
 
-				var obj = jsonDataObj[index];
-				console.log("Country "+obj.Country);
 				$("#name").text(obj.Name);
 					$("#years").text(obj.Decade);
 					$("#fields").text(obj.Field);
@@ -156,18 +156,39 @@ $(document).ready(function(){
 					$("#connections").text(obj.Connections);
 					$("#publications").text(obj.Publications);
 					if(obj.Geography.search("USA")>-1){
-						console.log("Country is usa!"+obj.Country);
 						$("#globe img").attr('src', 'materials/Map_US.png');
 					} else {
-						console.log("Not USA :(");
-							// $("#globe img").css({"display":"none"});
-							$("#globe img").attr('src', "");
-						// var mapImg = document.getElementById('globe');
-						// mapImg.parentNode.removeChild(mapImg);
+						$("#globe img").attr('src', "");
+						
 					}
 					animateHiddenDiv();
 			}
-		});
+		}
+		// entityNames.forEach(function(element, index, array){
+		// 	if(id == element){
+		// 		console.log("Matched "+id+" and "+element);
+
+		// 		var obj = jsonDataObj[index];
+		// 			$("#name").text(obj.Name);
+		// 			$("#years").text(obj.Decade);
+		// 			$("#fields").text(obj.Field);
+		// 			$("#quotes").text(obj.Quotes);
+		// 			$("#aboutPerson").text(obj.About);
+		// 			$("#connections").text(obj.Connections);
+		// 			$("#publications").text(obj.Publications);
+		// 			if(obj.Geography.search("USA")>-1){
+		// 				console.log("Country is usa!"+obj.Country);
+		// 				$("#globe img").attr('src', 'materials/Map_US.png');
+		// 			} else {
+		// 				console.log("Not USA :(");
+		// 					// $("#globe img").css({"display":"none"});
+		// 					$("#globe img").attr('src', "");
+		// 				// var mapImg = document.getElementById('globe');
+		// 				// mapImg.parentNode.removeChild(mapImg);
+		// 			}
+		// 			animateHiddenDiv();
+		// 	}
+		// });
 	}
 
 	var makeClickable = function(name){

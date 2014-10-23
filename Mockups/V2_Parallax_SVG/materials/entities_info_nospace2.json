@@ -1,4 +1,5 @@
 {"items":[{ "Name":"Arnstein, Sherry ",
+	"Tag":"arnstein",
  "EntityType":"Individual",
  "Field":"Community Design, Youth Development, Public Health",
  "Geography":"USA",
@@ -21,6 +22,7 @@
  },
  {
  "Name":"Krumholz, Norman",
+ "Tag":"krumholz",
  "EntityType":"Individual",
  "Field":"Community Design",
  "Geography":"USA",
@@ -33,6 +35,7 @@
  },
  {
  "Name":"Alinsky, Saul ",
+ "Tag":"alinsky",
  "EntityType":"Individual",
  "Field":"Community Design",
  "Geography":"USA",
@@ -344,7 +347,7 @@
  "Connections":"Louise Chawla, Roger Hart, Growing Up in Cities 1997 to 2006"
  },
  {
- "Name":"Freie, Paulo",
+ "Name":"Freire, Paulo",
  "EntityType":"Individual",
  "Field":"International Development, Public Health",
  "Geography":"Brazil",

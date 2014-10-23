@@ -1,0 +1,117 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+/**************NAVIGATION********/
+nav{
+	width: 100%;
+	height: 75px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	background-color: #202020;
+	padding: 2%;
+
+	font-weight: 400;
+	font-size: 100%;
+}
+
+nav ul{
+	list-style: none;
+	margin-right: 5%;
+
+}
+nav ul li{
+	display: block;
+	position: relative;
+	float: right;
+	padding: 6px;
+	margin-top: 2%;
+}
+a{
+	text-decoration: none;
+	color:white;
+	font-size: 1em;
+}
+nav a:not(#title){
+	font-size: 0.75em;
+	text-transform: lowercase;
+}
+
+a:visited, a:hover{
+	color:white;
+	text-decoration: none;
+}
+
+h1{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 200%;
+	color: white;
+	float: left;
+	margin-top: 1.5%;
+	text-decoration: none;
+}
+h6{
+	font-size: 100%;
+}
+
+/***************CONTENT*********************/
+
+.content{
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: left;
+	padding-left: 2%;
+	color: black;
+
+	padding-bottom: 250px;
+}
+
+.content ul{
+	list-style: none;
+}
+.content ul li{
+	margin-bottom: 8px;
+}
+
+.content h4{
+	font-size: 2em;
+	font-weight: bold;
+	text-align: right;
+}
+.content .column{
+	text-align: left;
+}
+.column{
+	width: 380px;
+	font-size: 0.75em;
+	margin-left: -5px;
+	padding: 0.5%;
+}
+
+.hovered{
+	cursor: pointer;
+}
+
+#heading{
+	margin-top: 150px;
+	margin-bottom: 15px;
+	padding-left: 2%;
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;
+	color:#878989;
+}
