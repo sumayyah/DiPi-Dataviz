@@ -93,10 +93,10 @@ h6{
 	text-align: left;
 }
 .column{
-	width: 500px;
+	width: 400px;
 	font-size: 0.75em;
 	margin-left: -5px;
-	padding: 0.5%;
+	padding: 2%;
 	padding-right: 1%;
 }
 
@@ -129,8 +129,8 @@ h6{
 	padding-top: 10px;
 }
 .individual{
-	width: 800px;
-	height: 150px;
+	width: 400px;
+	height: 200px;
 	float: left;
 }
 .individual img{

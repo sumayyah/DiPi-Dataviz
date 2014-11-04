@@ -63,19 +63,25 @@ nav h1{
 /***************CONTENT*********************/
 
 #content{
-	width: 75%;
+	width: 100%;
 	height: 100%;
 	margin-top: 150px;
 	color: black;
 	padding: 2%;
+
+	position: fixed;
+	display: flex;
+	justify-content:center;
+
+	overflow: scroll;
 
 }
 #content ul, #content li{
 	list-style: none;
 	margin: none;
 }
-#content ul{
-	overflow: hidden;
+.column ul{
+	overflow: auto;
 	padding: none;
 	margin-top: 3em;
 	margin-bottom: 3em;
@@ -94,19 +100,57 @@ nav h1{
 #content a{
 	color: black;
 }
+#content .column{
+	width: 80%;
+	font-size: 0.75em;
+	margin-left: 15px;
+}
+
+.column_sm {
+	width: 20%;
+	font-size: 0.75em;
+	padding-right: 5%;
+}
+.column_sm a{
+	color:#878989;
+}
+.column_sm img{
+	padding: 10px;
+}
+.downloadable{
+	position: relative;
+	width: 237px;
+}
 
 .hovered{
 	cursor: pointer;
 }
-#content h1{
-	display: block;	
-	font-family: 'Lato';
-	font-weight: 300;
+
+.overlay{
+	opacity: 30%;
+	z-index: 5;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	visibility: hidden;
+}
+h4{
+	color: #ED1C25;
+	font-weight: bold;
+}h5{
+	font-size: 100%;
+	line-height: 15px;
+	padding: 10px;
+	font-weight: bold;
+}p{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
 }
 .separator{
 	border: 0;
 	height: 0;
-	width: 75%;
+	width: 90%;
 	margin-bottom: 2em;
 	border-top: 1px solid rgba(0,0,0,1);
 	border-bottom: 1px solid rgba(255,255,255,0.3);
@@ -116,6 +160,17 @@ nav h1{
     -moz-border-right-colors: rgba(0,0,0,1);
     -moz-border-top-colors: rgba(0,0,0,1);
 }
+
+.alphaheader{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;
+	color:#878989;
+	margin-bottom: 14px;
+	margin-top: 12px;
+	word-spacing: 5px;
+}
+
 
 
 /***************FOOTER****************/
