@@ -65,13 +65,12 @@ $(document).ready(function(){
 			var text = element.selectAll('text');
 
 			element.click(function(){
-				console.log('clicked '+id);
 				setHiddenDiv(id);
 			});
 
 			element.hover(function(){
 				text.forEach(function(textEl, textIndex, textArray){
-					textEl.attr({fill: "#D39C2A"});
+					textEl.attr({fill: "#ED1C25"});
 				})
 			}, function(){
 				text.forEach(function(textEl, textIndex, textArray){
@@ -93,7 +92,7 @@ $(document).ready(function(){
 			case 'cdev':
 				console.log("clicked comm dev!");
 				$("html, body").animate({scrollTop: $("#Community_Design").position().top-150}, 1000);
-				$("#"+id).css({"color":"#D39C2A"});
+				$("#"+id).css({"color":"#ED1C25"});
 				$("a:not(#cdev)").css({"color":"white"});
 				return true;
 			break;
@@ -101,7 +100,7 @@ $(document).ready(function(){
 			case 'ydev':
 				console.log("clicked youth!");
 				$("html, body").animate({scrollTop: $("#Youth_Development").position().top-150}, 1000);
-				$("#"+id).css({"color":"#D39C2A"});
+				$("#"+id).css({"color":"#ED1C25"});
 				$("a:not(#ydev)").css({"color":"white"});
 				return true;
 			break;
@@ -109,7 +108,7 @@ $(document).ready(function(){
 			case 'iDev':
 				console.log("clicked international dev!");
 				$("html, body").animate({scrollTop: $("#International_Development").position().top-150}, 1000);
-				$("#"+id).css({"color":"#D39C2A"});
+				$("#"+id).css({"color":"#ED1C25"});
 				$("a:not(#iDev)").css({"color":"white"});
 				return true;
 			break;
@@ -117,7 +116,7 @@ $(document).ready(function(){
 			case 'health':
 				console.log("clicked health!");
 				$("html, body").animate({scrollTop: $("#Public_Health").position().top-150}, 1000);
-				$("#"+id).css({"color":"#D39C2A"});
+				$("#"+id).css({"color":"#ED1C25"});
 				$("a:not(#health)").css({"color":"white"});
 				return true;
 			break;
@@ -125,7 +124,7 @@ $(document).ready(function(){
 			case 'tech':
 				console.log("clicked tech!");
 				$("html, body").animate({scrollTop: $("#Technology_Development").position().top-150}, 1000);
-				$("#"+id).css({"color":"#D39C2A"});
+				$("#"+id).css({"color":"#ED1C25"});
 				$("a:not(#tech)").css({"color":"white"});
 				return true;
 			break;
@@ -138,13 +137,21 @@ $(document).ready(function(){
 
 	});
 
+	$('.navLinks a').hover(function(){
+		var id = $(this).attr('id');
+		$("#"+id).css({"color":"#ED1C25"});
+	}, function(){
+		var id = $(this).attr('id');
+		$("#"+id).css({"color":"white"});
+	})
+
 	function setHiddenDiv(id){
 
 		for(var i=0;i<jsonDataObj.length;i++){
 			var obj = jsonDataObj[i];
 			
 			if(id==obj.Tag){
-				console.log("Matched "+id+" and "+obj.Tag);
+				// console.log("Matched "+id+" and "+obj.Tag);
 
 					$("#name").text(obj.NameofEntities);
 					$("#years").text(obj.Decade);
@@ -153,12 +160,8 @@ $(document).ready(function(){
 					$("#aboutPerson").text(obj.AboutEntity);
 					$("#connections").text(obj.KeyConnections);
 					$("#publications").text(obj.KeyPublications);
-					if(obj.Geography.search("USA")>-1){
-						$("#globe img").attr('src', 'materials/Map_US.png');
-					} else {
-						$("#globe img").attr('src', "");
-						
-					}
+					setCountry(obj.Geography);
+					
 					animateHiddenDiv();
 			}
 		}
@@ -180,6 +183,42 @@ $(document).ready(function(){
 	})
 
 	function setCountry(country){
+		console.log("got "+country);
+
+		if(country.search("USA")>-1){
+
+			if(country.search("Norway")>-1) $("#globe img").attr('src', 'images/map_pngs/Map_US_Norway_Worldwide.png');
+			else if(country.search("Worldwide")> -1) $("#globe img").attr('src', 'images/map_pngs/Map_US_Worldwide.png');
+			else if(country.search("Taiwan")>-1){
+				if(country.search("HongKong")>-1 && country.search("SouthKorea")>-1) $("#globe img").attr('src', 'images/map_pngs/Map_US_Taiwan_HongKong_SouthKorea.png');
+				else $("#globe img").attr('src', 'images/map_pngs/Map_US_Taiwan.png');
+			}
+			else if(country.search("India")>-1) $("#globe img").attr('src', 'images/map_pngs/Map_US_India.png');
+			else $("#globe img").attr('src', 'images/map_pngs/Map_US.png');
+			
+		} 
+		else if(country.search("UK")>-1){
+
+			if(country.search("SouthAfrica")>-1) $("#globe img").attr('src', 'images/map_pngs/Map_UK_SouthAfrica_Worldwide.png');
+			else if(country.search("Worldwide")>-1) $("#globe img").attr('src', 'images/map_pngs/Map_UK_Worldwide.png');
+			else $("#globe img").attr('src', 'images/map_pngs/Map_UK.png');
+				
+		} 
+		else if(country.search("Bangladesh")>-1) $("#globe img").attr('src', 'images/map_pngs/Map_Bangladesh_Worldwide.png'); 
+		else if(country.search("Italy")>-1) $("#globe img").attr('src', 'images/map_pngs/Map_Italy_Worldwide.png');
+		else if(country.search("Sweden")>-1){
+			if(country.search("Denmark")>-1) $("#globe img").attr('src', 'images/map_pngs/Map_Sweden_Denmark.png');
+			else $("#globe img").attr('src', 'images/map_pngs/Map_Sweden.png');
+			
+		}
+		else if(country.search("Worldwide")>-1) $("#globe img").attr('src', 'images/map_pngs/Map_Worldwide.png');
+		else if(country.search("Argentina")>-1) $("#globe img").attr('src', 'images/map_pngs/Map_Argentina.png');
+		else if(country.search("Brazil")>-1) $("#globe img").attr('src', 'images/map_pngs/Map_Brazil.png');
+		else if(country.search("Denmark")>-1) $("#globe img").attr('src', 'images/map_pngs/Map_Denmark.png');
+		else if(country.search("India")>-1) $("#globe img").attr('src', 'images/map_pngs/Map_India.png');
+		else if(country.search("Norway")>-1) $("#globe img").attr('src', 'images/map_pngs/Map_Norway.png');
+		else if(country.search("Pakistan")>-1) $("#globe img").attr('src', 'images/map_pngs/Map_Pakistan.png');
+		else $("#globe img").attr('src', '');
 
 	}
 	function animateHiddenDiv(){

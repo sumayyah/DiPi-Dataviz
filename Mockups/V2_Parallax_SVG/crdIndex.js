@@ -39,6 +39,14 @@ $(document).ready(function(){
 		}
 	});
 
+	$('a').hover(function(){
+		var id = $(this).attr('id');
+		$("#"+id).css({"color":"#ED1C25"});
+	}, function(){
+		var id = $(this).attr('id');
+		$("#"+id).css({"color":"white"});
+	})
+
 	$('#close').click(function(){
 		$('#popupDiv').slideUp(2000);
 	})

@@ -102,7 +102,7 @@ h1{
 #intro h1{
 	color:black;
 	height:100%;
-	margin: 50px;
+
 	font-weight: 400;
 	width: 350px;
 	line-height: 150%;
@@ -144,7 +144,7 @@ h1{
 	margin-left: 15px;
 	padding-bottom: 50px;
 }.column .name{
-	color: #D39C2A;
+	color: #ED1C25;
 	font-family: 'Lato';
 	font-weight: 300;
 }h2, h4{
