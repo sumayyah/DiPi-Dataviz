@@ -63,7 +63,7 @@ h1{
 }
 h6{
 	font-size: 100%;
-	color: #D39C2A;
+	color: black;
 }
 
 /***************CONTENT*********************/
@@ -121,7 +121,7 @@ h6{
 	font-size: 1.8em;
 	color:#878989;
 	margin-bottom: 14px;
-	margin-top: 12px;
+	margin-top: 18px;
 }
 
 #team{
@@ -140,4 +140,18 @@ h6{
 
 .italicize{
 	font-style: italic;
+}
+
+/***************FOOTER****************/
+footer{
+	margin-top: 50px;
+	width: 100%;
+	height: 100px;
+	background-color: #202020;
+	bottom: 0px;
+}
+
+footer img{
+	float: right;
+	padding: 10px;
 }

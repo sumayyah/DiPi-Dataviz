@@ -44,7 +44,7 @@ $(document).ready(function(){
 		$("#"+id).css({"color":"#ED1C25"});
 	}, function(){
 		var id = $(this).attr('id');
-		$("#"+id).css({"color":"white"});
+		$("#"+id).css({"color":"#878989"});
 	})
 
 	$('#close').click(function(){
