@@ -44,6 +44,14 @@ $(document).ready(function(){
 		$("#"+id).css({"color":"#ED1C25"});
 	}, function(){
 		var id = $(this).attr('id');
+		$("#"+id).css({"color":"white"});
+	})
+
+	$('.column_sm a').hover(function(){
+		var id = $(this).attr('id');
+		$("#"+id).css({"color":"#ED1C25"});
+	}, function(){
+		var id = $(this).attr('id');
 		$("#"+id).css({"color":"#878989"});
 	})
 
