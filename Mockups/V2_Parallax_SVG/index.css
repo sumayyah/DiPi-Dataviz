@@ -56,15 +56,20 @@ a:visited, a:hover{
 	text-decoration: none;
 }
 
+#titleContainer{
+	width: 350px;
+	float: left;
+}
+
 h1{
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	font-size: 200%;
-	width: 350px;
+	font-size: 170%;
+	/*width: 350px;*/
 	color: white;
-	float: left;
+	/*float: left;*/
 	text-decoration: none;
-	line-height: 30pt;
+	line-height: 20pt;
 }
 
 /***************CONTENT******************/
@@ -112,9 +117,15 @@ h1{
 }
 
 #intro .column{
-	width: 350px;
+	width: 300px;
 	font-size: 0.75em;
 	padding: 15px;
+}
+
+#intro .columnimg{
+	width: 400px;
+	padding-left: none;
+	margin-left: -2%;
 }
 
 /**************DETAIL PANEL************/
@@ -142,7 +153,7 @@ h1{
 } 
 
 .column{
-	width: 400px;
+	width: 370px;
 	font-size: 0.75em;
 	margin-right: 15px;
 	margin-left: 15px;
@@ -188,7 +199,7 @@ footer{
 	margin-top: 50px;
 	width: 100%;
 	height: 100px;
-	background-color: #202020;
+	background-color: #333333;
 	bottom: 0px;
 }
 
