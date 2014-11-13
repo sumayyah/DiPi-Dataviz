@@ -76,7 +76,7 @@ nav h1{
 	overflow: scroll;
 
 }
-#content ul, #content li{
+.column ul, .column li{
 	list-style: none;
 	margin: none;
 }
@@ -86,15 +86,15 @@ nav h1{
 	margin-top: 3em;
 	margin-bottom: 3em;
 }
-#content ul li{
+.column ul li{
 	float: left;
 }
-#content ul li img{
+.column ul li img{
 	display: block;
 	margin-right: 3em;
 	margin-bottom: 3em;
 }
-#content ul li img:hover{
+.column ul li img:hover{
 	cursor: pointer;
 }
 #content a{
@@ -119,6 +119,24 @@ nav h1{
 	padding: 10px;
 	float: left;
 }
+
+.column_sm ul li:nth-child(1){
+	list-style-image: url('images/resources_cc_icon.png');
+}.column_sm ul li:nth-child(2){
+	list-style-image: url('images/resources_attribution_icon.png');
+}.column_sm ul li:nth-child(3){
+	list-style-image: url('images/resources_noncomm_icon.png');
+}.column_sm ul li:nth-child(4){
+	list-style-image: url('images/resources_remix_icon.png');
+}
+
+.column_sm ul{
+	margin-left: 50px;
+}
+/*.icon{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}*/
 .downloadable{
 	position: relative;
 	width: 237px;
