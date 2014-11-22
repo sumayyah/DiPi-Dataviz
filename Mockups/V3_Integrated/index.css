@@ -224,3 +224,15 @@ footer img{
 	float: right;
 	padding: 10px;
 }
+#contact{
+	color: white;
+	font-family: 'Lato';
+	font-size: 10pt;
+	float: left;
+	margin-top: 25px;
+	margin-left: 2%;
+	padding: 5px;
+}
+#contact ul{
+	list-style-type: none;
+}
