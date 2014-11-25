@@ -1,13 +1,17 @@
 $(document).ready(function(){
 
-	var width = $(window).width()+"px";
-	$('#popupDiv').css({'width':width});
-	$('nav').css({'width':width});
-	$("#content").css({'width':width});
-	$('footer').css({'width':width});
+	// var width = $(window).width()+"px";
+	var width = 1235+"px";
+	$('#popupDiv').css({'min-width':width});
+	$('nav').css({'min-width':width});
+	$("#content").css({'min-width':width});
+	$('footer').css({'min-width':width});
 	// TODO: what if this is a really wide window? 
 	console.log("width is "+width);
 
+	// $(window).resize(function(){
+	// 	console.log("width is "+$(window).width());
+	// });
 	// $(window).resize(function(){
 	// 	// To get make sure pages do fill the screen, but don't squash content - works when you start small(squashed)->big, resize ok; Big to small ok; Start small is an issue
 	// 	var width = $(window).width()+"px";
