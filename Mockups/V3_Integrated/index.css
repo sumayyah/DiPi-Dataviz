@@ -16,7 +16,7 @@ body{
 	line-height: 20px;
 }
 #wrapper{
-	width: 1154px;
+	/*width: 1154px;*/
 	margin-left: 2%;
 }
 /**************NAVIGATION********/
@@ -59,7 +59,6 @@ a{
 a:not(#title){
 
 	text-transform: lowercase;
-	
 	font-size: 0.75em;
 }
 a:visited, a:hover{
@@ -70,8 +69,10 @@ a:visited, a:hover{
 #titleContainer{
 	width: 350px;
 	float: left;
-	padding: 20px 0px 0px;
+	padding: 8px 0px 0px;
 	/*margin-top: 2%;*/
+}#title{
+	line-height: 33px;
 }
 
 h1{
@@ -116,11 +117,18 @@ h1{
 	margin-top: 100px;
 	padding-top: 115px;
 	padding-left: 2%;
+
 	display: flex;
+	display: -webkit-flex;
+	display: -webkit-box;
 	justify-content:left;
 }
 #introText{
+
 	display: flex;
+	display: -webkit-flex;
+	display: -webkit-box;
+
 	justify-content: center;
 }
 #intro h1{
@@ -151,12 +159,16 @@ h1{
 	bottom: 0px;
 
 	position: fixed;
-	/*width: 100%;*/
+	width: 100%;
 	height: 170px;
 	background-color: white;
 	color: #303031;
+
 	display: flex;
+	display: -webkit-flex;
+	display: -webkit-box;
 	justify-content:center;
+
 	padding-top: 25px;
 	padding-bottom: 40px;
 	padding-left: 2%;

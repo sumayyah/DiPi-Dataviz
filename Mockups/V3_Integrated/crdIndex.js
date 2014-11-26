@@ -3,29 +3,17 @@ $(document).ready(function(){
 
 	$("#popupDiv").slideUp(10);
 
-	var width = $(window).width()+"px";
-	$('#popupDiv').css({'width':width});
-	$('nav').css({'width':width});
-	$("#content").css({'width':width});
-	$('footer').css({'width':width});
-
-	// $(window).resize(function(){
-	// 	// To get make sure pages do fill the screen, but don't squash content - works when you start small(squashed)->big, resize ok; Big to small ok; Start small is an issue
-	// 	var width = $(window).width()+"px";
-	// 	$('#popupDiv').css({'width':width});
-	// 	$('nav').css({'width':width});
-	// 	$("#content").css({'width':width});
-	// 	$('footer').css({'width':width});
-	// 	// TODO: what if this is a really wide window? 
-	// 	console.log("width is "+width);
-	// });
-
-
+	var width = 1235+"px";
+	$('#popupDiv').css({'min-width':width});
+	$('nav').css({'min-width':width});
+	$("#content").css({'min-width':width});
+	$('footer').css({'min-width':width});
+	
 	var offsetvar = 1; 
 	var peopleInfo;
 	var jsonDataObj;
 
-	jQuery.getJSON("materials/entities_info2.json", function(data){
+	jQuery.getJSON("materials/entities_info2_PD.json", function(data){
 		console.log("Got file data!");
 		jsonDataObj = data.items;
 		
@@ -63,6 +51,14 @@ $(document).ready(function(){
 	}, function(){
 		var id = $(this).attr('id');
 		$("#"+id).css({"color":"white"});
+	})
+
+	$('li').hover(function(){
+		var id = $(this).attr('id');
+		$("#"+id).css({"color":"#ED1C25"});
+	}, function(){
+		var id = $(this).attr('id');
+		$("#"+id).css({"color":"black"});
 	})
 
 	$('.column_sm a').hover(function(){

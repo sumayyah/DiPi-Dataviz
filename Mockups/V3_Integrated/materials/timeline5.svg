@@ -4,15 +4,6 @@
 <svg version="1.1" id="Layer1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="1157.564px" height="2161.104px" viewBox="0 0 1157.564 2161.104" enable-background="new 0 0 1157.564 2161.104"
 	 xml:space="preserve">
-<!-- <g id="background">
-	<rect y="106.207" fill="#C8C8C8" width="1157.564" height="463.965"/>
-	<rect id="background_color" y="570.172" fill="#F1F1F2" width="1157.564" height="398.829"/>
-	<rect y="969" fill="#C8C8C8" width="1157.564" height="439.563"/>
-	<rect y="1408.563" fill="#F1F1F2" width="1157.564" height="152.42"/>
-	<g id="Background">
-		<rect y="1560.875" fill="#C8C8C8" width="1157.564" height="473.006"/>
-	</g>
-</g> -->
 <g id="background">
 	<rect x="1.95" y="106.207" fill="#C8C8C8" width="1152.05" height="463.965"/>
 	<rect id="background_color" x="1.951" y="570.172" fill="#F1F1F2" width="1152.049" height="398.829"/>
@@ -28,7 +19,7 @@
 			<g id="field_title_2_">
 				<g>
 					<g>
-						<text transform="matrix(1 0 0 1 814.4053 1609.77)" fill="#232120" font-family="'ArialMT'" font-size="21">TECHNOLOGY DEVELOPMENT</text>
+						<text transform="matrix(1 0 0 1 814.4053 1609.77)" fill="#232120"  font-size="21">TECHNOLOGY DEVELOPMENT</text>
 					</g>
 				</g>
 			</g>
@@ -227,103 +218,103 @@
 		</g>
 	</g>
 	<g id="Entities_3_">
-		<g id="drscdp">
-			<text transform="matrix(1 0 0 1 273.0586 1628.8657)" fill="#232120" font-family="'ArialMT'" font-size="10">Design Research </text>
-			<text transform="matrix(1 0 0 1 273.0586 1643.2661)" fill="#232120" font-family="'ArialMT'" font-size="10">Society Conference </text>
-			<text transform="matrix(1 0 0 1 273.0586 1657.6665)" fill="#232120" font-family="'ArialMT'" font-size="10">“Design Participation” </text>
+		<g id="drscdp" class="name">
+			<text transform="matrix(1 0 0 1 273.0586 1628.8657)" fill="#232120"  font-size="10">Design Research </text>
+			<text transform="matrix(1 0 0 1 273.0586 1643.2661)" fill="#232120"  font-size="10">Society Conference </text>
+			<text transform="matrix(1 0 0 1 273.0586 1657.6665)" fill="#232120"  font-size="10">“Design Participation” </text>
 			<g>
-				<text transform="matrix(1 0 0 1 273.0586 1672.0669)" fill="#77787B" font-family="'ArialMT'" font-size="10">1971</text>
+				<text transform="matrix(1 0 0 1 273.0586 1672.0669)" fill="#77787B"  font-size="10">1971</text>
 			</g>
 		</g>
-		<g id="njmfn">
-			<text transform="matrix(1 0 0 1 273.0576 1710.2056)" fill="#232120" font-family="'ArialMT'" font-size="10">NJMF Project</text>
-			<text transform="matrix(1 0 0 1 273.0576 1724.606)" fill="#232120" font-family="'ArialMT'" font-size="10">Norway </text>
+		<g id="njmfn" class="name">
+			<text transform="matrix(1 0 0 1 273.0576 1710.2056)" fill="#232120"  font-size="10">NJMF Project</text>
+			<text transform="matrix(1 0 0 1 273.0576 1724.606)" fill="#232120"  font-size="10">Norway </text>
 			<g>
-				<text transform="matrix(1 0 0 1 273.0576 1739.0063)" fill="#77787B" font-family="'ArialMT'" font-size="10">1971 to 1973</text>
+				<text transform="matrix(1 0 0 1 273.0576 1739.0063)" fill="#77787B"  font-size="10">1971 to 1973</text>
 			</g>
 		</g>
-		<g id="demoss">
-			<text transform="matrix(1 0 0 1 340.4912 1764.4185)" fill="#232120" font-family="'ArialMT'" font-size="10">DEMOS Project</text>
-			<text transform="matrix(1 0 0 1 340.4912 1778.8188)" fill="#232120" font-family="'ArialMT'" font-size="10">Sweden</text>
+		<g id="demoss" class="name">
+			<text transform="matrix(1 0 0 1 340.4912 1764.4185)" fill="#232120"  font-size="10">DEMOS Project</text>
+			<text transform="matrix(1 0 0 1 340.4912 1778.8188)" fill="#232120"  font-size="10">Sweden</text>
 			<g>
-				<text transform="matrix(1 0 0 1 340.4912 1793.2173)" fill="#77787B" font-family="'ArialMT'" font-size="10">1975 to 1979</text>
+				<text transform="matrix(1 0 0 1 340.4912 1793.2173)" fill="#77787B"  font-size="10">1975 to 1979</text>
+			</g>
+		</g> 
+		<g id="dued" class="name">
+			<text transform="matrix(1 0 0 1 408.9922 1833.9185)" fill="#232120"  font-size="10">DUE Project</text>
+			<text transform="matrix(1 0 0 1 408.9922 1848.3188)" fill="#232120"  font-size="10">Denmark</text>
+			<g>
+				<text transform="matrix(1 0 0 1 408.9922 1862.7173)" fill="#77787B"  font-size="10">1977 to 1980</text>
 			</g>
 		</g>
-		<g id="dued">
-			<text transform="matrix(1 0 0 1 408.9922 1833.9185)" fill="#232120" font-family="'ArialMT'" font-size="10">DUE Project</text>
-			<text transform="matrix(1 0 0 1 408.9922 1848.3188)" fill="#232120" font-family="'ArialMT'" font-size="10">Denmark</text>
+		<g id="utopiasd" class="name">
+			<text transform="matrix(1 0 0 1 497.9922 1835.9185)" fill="#232120"  font-size="10">UTOPIA project</text>
+			<text transform="matrix(1 0 0 1 497.9922 1850.3188)" fill="#232120"  font-size="10">Sweden and </text>
+			<text transform="matrix(1 0 0 1 497.9922 1864.7173)" fill="#232120"  font-size="10">Denmark</text>
 			<g>
-				<text transform="matrix(1 0 0 1 408.9922 1862.7173)" fill="#77787B" font-family="'ArialMT'" font-size="10">1977 to 1980</text>
+				<text transform="matrix(1 0 0 1 497.9922 1879.1177)" fill="#77787B"  font-size="10">1981 to 1984</text>
 			</g>
 		</g>
-		<g id="utopiasd">
-			<text transform="matrix(1 0 0 1 497.9922 1835.9185)" fill="#232120" font-family="'ArialMT'" font-size="10">UTOPIA project</text>
-			<text transform="matrix(1 0 0 1 497.9922 1850.3188)" fill="#232120" font-family="'ArialMT'" font-size="10">Sweden and </text>
-			<text transform="matrix(1 0 0 1 497.9922 1864.7173)" fill="#232120" font-family="'ArialMT'" font-size="10">Denmark</text>
+		<g id="fp" class="name">
+			<text transform="matrix(1 0 0 1 588.9922 1873.9185)" fill="#232120"  font-size="10">Florence</text>
+			<text transform="matrix(1 0 0 1 588.9922 1888.3188)" fill="#232120"  font-size="10">Project </text>
 			<g>
-				<text transform="matrix(1 0 0 1 497.9922 1879.1177)" fill="#77787B" font-family="'ArialMT'" font-size="10">1981 to 1984</text>
+				<text transform="matrix(1 0 0 1 588.9922 1902.7173)" fill="#77787B"  font-size="10">1984 to1987</text>
 			</g>
 		</g>
-		<g id="fp">
-			<text transform="matrix(1 0 0 1 588.9922 1873.9185)" fill="#232120" font-family="'ArialMT'" font-size="10">Florence</text>
-			<text transform="matrix(1 0 0 1 588.9922 1888.3188)" fill="#232120" font-family="'ArialMT'" font-size="10">Project </text>
+		<g id="atpd" class="name">
+			<text transform="matrix(1 0 0 1 690.4951 1870.9185)" fill="#232120"  font-size="10">AT Project</text>
+			<text transform="matrix(1 0 0 1 690.4951 1885.3188)" fill="#232120"  font-size="10">Denmark</text>
 			<g>
-				<text transform="matrix(1 0 0 1 588.9922 1902.7173)" fill="#77787B" font-family="'ArialMT'" font-size="10">1984 to1987</text>
+				<text transform="matrix(1 0 0 1 690.4951 1899.7173)" fill="#77787B"  font-size="10">1990 to present</text>
 			</g>
 		</g>
-		<g id="atpd">
-			<text transform="matrix(1 0 0 1 690.4951 1870.9185)" fill="#232120" font-family="'ArialMT'" font-size="10">AT Project</text>
-			<text transform="matrix(1 0 0 1 690.4951 1885.3188)" fill="#232120" font-family="'ArialMT'" font-size="10">Denmark</text>
+		<g id="parc" class="name">
+			<text transform="matrix(1 0 0 1 509.9922 1623.9067)" fill="#232120"  font-size="10">PARC</text>
 			<g>
-				<text transform="matrix(1 0 0 1 690.4951 1899.7173)" fill="#77787B" font-family="'ArialMT'" font-size="10">1990 to present</text>
+				<text transform="matrix(1 0 0 1 509.9922 1638.3071)" fill="#77787B"  font-size="10">1980s to present</text>
 			</g>
 		</g>
-		<g id="parc">
-			<text transform="matrix(1 0 0 1 509.9922 1623.9067)" fill="#232120" font-family="'ArialMT'" font-size="10">PARC</text>
+		<g id="cpsr" class="name">
+			<text transform="matrix(1 0 0 1 546.4922 1741.4165)" fill="#232120"  font-size="10">Computer Professionals </text>
+			<text transform="matrix(1 0 0 1 546.4922 1755.8169)" fill="#232120"  font-size="10">for Social Responsibility</text>
+			<text transform="matrix(1 0 0 1 546.4922 1770.2173)" fill="#232120"  font-size="10">(CPSR)</text>
 			<g>
-				<text transform="matrix(1 0 0 1 509.9922 1638.3071)" fill="#77787B" font-family="'ArialMT'" font-size="10">1980s to present</text>
+				<text transform="matrix(1 0 0 1 546.4922 1784.6177)" fill="#77787B"  font-size="10">1983 to 2013</text>
 			</g>
 		</g>
-		<g id="cpsr">
-			<text transform="matrix(1 0 0 1 546.4922 1741.4165)" fill="#232120" font-family="'ArialMT'" font-size="10">Computer Professionals </text>
-			<text transform="matrix(1 0 0 1 546.4922 1755.8169)" fill="#232120" font-family="'ArialMT'" font-size="10">for Social Responsibility</text>
-			<text transform="matrix(1 0 0 1 546.4922 1770.2173)" fill="#232120" font-family="'ArialMT'" font-size="10">(CPSR)</text>
+		<g id="pdc" class="name">
+			<text transform="matrix(1 0 0 1 691.4951 1620.9067)" fill="#232120"  font-size="10">Participatory </text>
+			<text transform="matrix(1 0 0 1 691.4951 1635.3071)" fill="#232120"  font-size="10">Design Conference</text>
 			<g>
-				<text transform="matrix(1 0 0 1 546.4922 1784.6177)" fill="#77787B" font-family="'ArialMT'" font-size="10">1983 to 2013</text>
+				<text transform="matrix(1 0 0 1 691.4951 1649.7056)" fill="#77787B"  font-size="10">1990 to present</text>
 			</g>
 		</g>
-		<g id="pdc">
-			<text transform="matrix(1 0 0 1 691.4951 1620.9067)" fill="#232120" font-family="'ArialMT'" font-size="10">Participatory </text>
-			<text transform="matrix(1 0 0 1 691.4951 1635.3071)" fill="#232120" font-family="'ArialMT'" font-size="10">Design Conference</text>
+		<g id="psp" class="name">
+			<text transform="matrix(1 0 0 1 898.498 1754.4165)" fill="#232120"  font-size="10">Public Sphere</text>
+			<text transform="matrix(1 0 0 1 898.498 1768.8169)" fill="#232120"  font-size="10">Project</text>
+			<text transform="matrix(1 0 0 1 927.8076 1768.8169)" fill="#232120"  font-size="10"> </text>
 			<g>
-				<text transform="matrix(1 0 0 1 691.4951 1649.7056)" fill="#77787B" font-family="'ArialMT'" font-size="10">1990 to present</text>
+				<text transform="matrix(1 0 0 1 898.498 1783.2173)" fill="#77787B"  font-size="10">2000s to present</text>
 			</g>
 		</g>
-		<g id="psp">
-			<text transform="matrix(1 0 0 1 898.498 1754.4165)" fill="#232120" font-family="'ArialMT'" font-size="10">Public Sphere</text>
-			<text transform="matrix(1 0 0 1 898.498 1768.8169)" fill="#232120" font-family="'ArialMT'" font-size="10">Project</text>
-			<text transform="matrix(1 0 0 1 927.8076 1768.8169)" fill="#232120" font-family="'ArialMT'" font-size="10"> </text>
+		<g id="sanders" class="name">
+			<text transform="matrix(1 0 0 1 508.9922 1681.9067)" fill="#232120"  font-size="10">Elizabeth B.-N. </text>
+			<text transform="matrix(1 0 0 1 508.9922 1696.3071)" fill="#232120"  font-size="10">Sanders</text>
 			<g>
-				<text transform="matrix(1 0 0 1 898.498 1783.2173)" fill="#77787B" font-family="'ArialMT'" font-size="10">2000s to present</text>
+				<text transform="matrix(1 0 0 1 508.9922 1710.7075)" fill="#77787B"  font-size="10">1980s to present</text>
 			</g>
 		</g>
-		<g id="sanders">
-			<text transform="matrix(1 0 0 1 508.9922 1681.9067)" fill="#232120" font-family="'ArialMT'" font-size="10">Elizabeth B.-N. </text>
-			<text transform="matrix(1 0 0 1 508.9922 1696.3071)" fill="#232120" font-family="'ArialMT'" font-size="10">Sanders</text>
+		<g id="ap" class="name">
+			<text transform="matrix(1 0 0 1 909.082 1868.1724)" fill="#232120"  font-size="10">Atelier Project</text>
 			<g>
-				<text transform="matrix(1 0 0 1 508.9922 1710.7075)" fill="#77787B" font-family="'ArialMT'" font-size="10">1980s to present</text>
+				<text transform="matrix(1 0 0 1 909.082 1882.5728)" fill="#77787B"  font-size="10">2001 to 2004</text>
 			</g>
 		</g>
-		<g id="ap">
-			<text transform="matrix(1 0 0 1 909.082 1868.1724)" fill="#232120" font-family="'ArialMT'" font-size="10">Atelier Project</text>
+		<g id="ehn" class="name">
+			<text transform="matrix(1 0 0 1 163.9277 1843.2954)" fill="#232120"  font-size="10">Pelle Ehn</text>
 			<g>
-				<text transform="matrix(1 0 0 1 909.082 1882.5728)" fill="#77787B" font-family="'ArialMT'" font-size="10">2001 to 2004</text>
-			</g>
-		</g>
-		<g id="ehn">
-			<text transform="matrix(1 0 0 1 163.9277 1843.2954)" fill="#232120" font-family="'ArialMT'" font-size="10">Pelle Ehn</text>
-			<g>
-				<text transform="matrix(1 0 0 1 163.9277 1857.6958)" fill="#77787B" font-family="'ArialMT'" font-size="10">1960s to present</text>
+				<text transform="matrix(1 0 0 1 163.9277 1857.6958)" fill="#77787B"  font-size="10">1960s to present</text>
 			</g>
 		</g>
 	</g>
@@ -332,7 +323,7 @@
 	<g id="Background_4_">
 		<g id="field_title_1_">
 			<g>
-				<text transform="matrix(1 0 0 1 963.2734 1457.063)" fill="#232120" font-family="'ArialMT'" font-size="21">PUBLIC HEALTH</text>
+				<text transform="matrix(1 0 0 1 963.2734 1457.063)" fill="#232120"  font-size="21">PUBLIC HEALTH</text>
 			</g>
 		</g>
 	</g>
@@ -377,24 +368,24 @@
 		</g>
 	</g>
 	<g id="Entities_4_">
-		<g id="wallerstein">
+		<g id="wallerstein" class="name">
 			<g>
-				<text transform="matrix(1 0 0 1 380.0532 1462.0396)" fill="#77787B" font-family="'ArialMT'" font-size="10">1970 to present</text>
+				<text transform="matrix(1 0 0 1 380.0532 1462.0396)" fill="#77787B"  font-size="10">1970 to present</text>
 			</g>
-			<text transform="matrix(1 0 0 1 380.0532 1447.6392)" fill="#232120" font-family="'ArialMT'" font-size="10">Minkler &amp; Wallerstein</text>
+			<text transform="matrix(1 0 0 1 380.0532 1447.6392)" fill="#232120"  font-size="10">Minkler &amp; Wallerstein</text>
 		</g>
-		<g id="cbpr">
-			<text transform="matrix(1 0 0 1 744.6221 1461.6333)" fill="#232120" font-family="'ArialMT'" font-size="10">Community-based </text>
-			<text transform="matrix(1 0 0 1 744.6221 1476.0337)" fill="#232120" font-family="'ArialMT'" font-size="10">Participatory Research</text>
-			<text transform="matrix(1 0 0 1 744.6221 1490.4341)" fill="#232120" font-family="'ArialMT'" font-size="10">(CBPR) Program</text>
+		<g id="cbpr" class="name">
+			<text transform="matrix(1 0 0 1 744.6221 1461.6333)" fill="#232120"  font-size="10">Community-based </text>
+			<text transform="matrix(1 0 0 1 744.6221 1476.0337)" fill="#232120"  font-size="10">Participatory Research</text>
+			<text transform="matrix(1 0 0 1 744.6221 1490.4341)" fill="#232120"  font-size="10">(CBPR) Program</text>
 			<g>
-				<text transform="matrix(1 0 0 1 744.6221 1504.8345)" fill="#77787B" font-family="'ArialMT'" font-size="10">1995 to present</text>
+				<text transform="matrix(1 0 0 1 744.6221 1504.8345)" fill="#77787B"  font-size="10">1995 to present</text>
 			</g>
 		</g>
-		<g id="whyte">
-			<text transform="matrix(1 0 0 1 161.375 1513.9692)" fill="#232120" font-family="'ArialMT'" font-size="10">William Foote Whyte</text>
+		<g id="whyte" class="name">
+			<text transform="matrix(1 0 0 1 161.375 1513.9692)" fill="#232120"  font-size="10">William Foote Whyte</text>
 			<g>
-				<text transform="matrix(1 0 0 1 161.375 1528.3696)" fill="#77787B" font-family="'ArialMT'" font-size="10">1960 to1990s</text>
+				<text transform="matrix(1 0 0 1 161.375 1528.3696)" fill="#77787B"  font-size="10">1960 to1990s</text>
 			</g>
 		</g>
 	</g>
@@ -404,7 +395,7 @@
 		<g id="Background_3_">
 			<g id="field_title">
 				<g>
-					<text transform="matrix(1 0 0 1 794.9131 1017.9365)" fill="#232120" font-family="'ArialMT'" font-size="21">INTERNATIONAL DEVELOPMENT</text>
+					<text transform="matrix(1 0 0 1 794.9131 1017.9365)" fill="#232120"  font-size="21">INTERNATIONAL DEVELOPMENT</text>
 				</g>
 			</g>
 		</g>
@@ -526,85 +517,85 @@
 		</g>
 	</g>
 	<g id="Entities_2_">
-		<g id="sewa">
-			<text transform="matrix(1 0 0 1 329.2349 1304.2095)" fill="#232120" font-family="'ArialMT'" font-size="10">Self-Employed </text>
-			<text transform="matrix(1 0 0 1 329.2349 1318.6099)" fill="#232120" font-family="'ArialMT'" font-size="10">Women&apos;s Associations </text>
-			<text transform="matrix(1 0 0 1 329.2349 1333.0103)" fill="#232120" font-family="'ArialMT'" font-size="10">(SEWA) in India</text>
+		<g id="sewa" class="name">
+			<text transform="matrix(1 0 0 1 329.2349 1304.2095)" fill="#232120"  font-size="10">Self-Employed </text>
+			<text transform="matrix(1 0 0 1 329.2349 1318.6099)" fill="#232120"  font-size="10">Women&apos;s Associations </text>
+			<text transform="matrix(1 0 0 1 329.2349 1333.0103)" fill="#232120"  font-size="10">(SEWA) in India</text>
 			<g>
-				<text transform="matrix(1 0 0 1 329.2349 1347.4106)" fill="#77787B" font-family="'ArialMT'" font-size="10">1972 to present</text>
+				<text transform="matrix(1 0 0 1 329.2349 1347.4106)" fill="#77787B"  font-size="10">1972 to present</text>
 			</g>
 		</g>
-		<g id="opprti">
-			<text transform="matrix(1 0 0 1 482.6748 1336.645)" fill="#232120" font-family="'ArialMT'" font-size="10">Orangi Pilot Project-Research </text>
-			<text transform="matrix(1 0 0 1 482.6748 1351.0454)" fill="#232120" font-family="'ArialMT'" font-size="10">and Training Institute (OPP-RTI)</text>
+		<g id="opprti" class="name">
+			<text transform="matrix(1 0 0 1 482.6748 1336.645)" fill="#232120"  font-size="10">Orangi Pilot Project-Research </text>
+			<text transform="matrix(1 0 0 1 482.6748 1351.0454)" fill="#232120"  font-size="10">and Training Institute (OPP-RTI)</text>
 			<g>
-				<text transform="matrix(1 0 0 1 482.6748 1365.4438)" fill="#77787B" font-family="'ArialMT'" font-size="10">1980 to present</text>
+				<text transform="matrix(1 0 0 1 482.6748 1365.4438)" fill="#77787B"  font-size="10">1980 to present</text>
 			</g>
 		</g>
-		<g id="freire">
-			<text transform="matrix(1 0 0 1 189.9863 1201.5923)" fill="#232120" font-family="'ArialMT'" font-size="10">Paulo Freire</text>
+		<g id="freire" class="name">
+			<text transform="matrix(1 0 0 1 189.9863 1201.5923)" fill="#232120"  font-size="10">Paulo Freire</text>
 			<g>
-				<text transform="matrix(1 0 0 1 189.9863 1215.9907)" fill="#77787B" font-family="'ArialMT'" font-size="10">1960s to 1990s</text>
+				<text transform="matrix(1 0 0 1 189.9863 1215.9907)" fill="#77787B"  font-size="10">1960s to 1990s</text>
 			</g>
 		</g>
-		<g id="icae">
-			<text transform="matrix(1 0 0 1 344.6362 1199.2056)" fill="#232120" font-family="'ArialMT'" font-size="10">International Council </text>
-			<text transform="matrix(1 0 0 1 344.6362 1213.606)" fill="#232120" font-family="'ArialMT'" font-size="10">for Adult Education</text>
+		<g id="icae" class="name">
+			<text transform="matrix(1 0 0 1 344.6362 1199.2056)" fill="#232120"  font-size="10">International Council </text>
+			<text transform="matrix(1 0 0 1 344.6362 1213.606)" fill="#232120"  font-size="10">for Adult Education</text>
 			<g>
-				<text transform="matrix(1 0 0 1 344.6362 1228.0044)" fill="#77787B" font-family="'ArialMT'" font-size="10">1973 to present</text>
+				<text transform="matrix(1 0 0 1 344.6362 1228.0044)" fill="#77787B"  font-size="10">1973 to present</text>
 			</g>
 		</g>
-		<g id="spra">
-			<text transform="matrix(1 0 0 1 539.2861 1255.1919)" fill="#232120" font-family="'ArialMT'" font-size="10">Society for Participatory</text>
-			<text transform="matrix(1 0 0 1 539.2861 1269.5903)" fill="#232120" font-family="'ArialMT'" font-size="10">Research in Asia </text>
+		<g id="spra" class="name">
+			<text transform="matrix(1 0 0 1 539.2861 1255.1919)" fill="#232120"  font-size="10">Society for Participatory</text>
+			<text transform="matrix(1 0 0 1 539.2861 1269.5903)" fill="#232120"  font-size="10">Research in Asia </text>
 			<g>
-				<text transform="matrix(1 0 0 1 539.2861 1283.9907)" fill="#77787B" font-family="'ArialMT'" font-size="10">1982 to present</text>
+				<text transform="matrix(1 0 0 1 539.2861 1283.9907)" fill="#77787B"  font-size="10">1982 to present</text>
 			</g>
 		</g>
-		<g id="falsborda">
-			<text transform="matrix(1 0 0 1 312.147 1381.8813)" fill="#232120" font-family="'ArialMT'" font-size="10">Orlando Fals-Borda</text>
+		<g id="falsborda" class="name">
+			<text transform="matrix(1 0 0 1 312.147 1381.8813)" fill="#232120"  font-size="10">Orlando Fals-Borda</text>
 			<g>
-				<text transform="matrix(1 0 0 1 312.147 1396.2817)" fill="#77787B" font-family="'ArialMT'" font-size="10">1970 to 2000s</text>
+				<text transform="matrix(1 0 0 1 312.147 1396.2817)" fill="#77787B"  font-size="10">1970 to 2000s</text>
 			</g>
 		</g>
-		<g id="wb">
-			<text transform="matrix(1 0 0 1 344.6367 993.1738)" fill="#232120" font-family="'ArialMT'" font-size="10">World Bank</text>
+		<g id="wb" class="name">
+			<text transform="matrix(1 0 0 1 344.6367 993.1738)" fill="#232120"  font-size="10">World Bank</text>
 			<g>
-				<text transform="matrix(1 0 0 1 344.6367 1007.5742)" fill="#77787B" font-family="'ArialMT'" font-size="10">1970s to present</text>
+				<text transform="matrix(1 0 0 1 344.6367 1007.5742)" fill="#77787B"  font-size="10">1970s to present</text>
 			</g>
 		</g>
-		<g id="bank">
-			<text transform="matrix(1 0 0 1 398.9912 1077.1704)" fill="#232120" font-family="'ArialMT'" font-size="10">Grameen Bank</text>
+		<g id="bank" class="name">
+			<text transform="matrix(1 0 0 1 398.9912 1077.1704)" fill="#232120"  font-size="10">Grameen Bank</text>
 			<g>
-				<text transform="matrix(1 0 0 1 398.9912 1091.5688)" fill="#77787B" font-family="'ArialMT'" font-size="10">1976 to present</text>
+				<text transform="matrix(1 0 0 1 398.9912 1091.5688)" fill="#77787B"  font-size="10">1976 to present</text>
 			</g>
 		</g>
-		<g id="uni">
-			<text transform="matrix(1 0 0 1 286.4604 1125.1704)" fill="#232120" font-family="'ArialMT'" font-size="10">United Nations Institutions</text>
-			<text transform="matrix(1 0 0 1 286.4604 1139.5708)" fill="#232120" font-family="'ArialMT'" font-size="10"> (UNDP and UNRISD)</text>
+		<g id="uni" class="name">
+			<text transform="matrix(1 0 0 1 286.4604 1125.1704)" fill="#232120"  font-size="10">United Nations Institutions</text>
+			<text transform="matrix(1 0 0 1 286.4604 1139.5708)" fill="#232120"  font-size="10"> (UNDP and UNRISD)</text>
 			<g>
-				<text transform="matrix(1 0 0 1 286.4604 1153.9692)" fill="#77787B" font-family="'ArialMT'" font-size="10">1970s to present</text>
+				<text transform="matrix(1 0 0 1 286.4604 1153.9692)" fill="#77787B"  font-size="10">1970s to present</text>
 			</g>
 		</g>
-		<g id="chambers">
-			<text transform="matrix(1 0 0 1 316.4624 1260.5981)" fill="#232120" font-family="'ArialMT'" font-size="10">Robert Chambers</text>
+		<g id="chambers" class="name">
+			<text transform="matrix(1 0 0 1 316.4624 1260.5981)" fill="#232120"  font-size="10">Robert Chambers</text>
 			<g>
-				<text transform="matrix(1 0 0 1 316.4624 1274.9966)" fill="#77787B" font-family="'ArialMT'" font-size="10">1970s to present</text>
+				<text transform="matrix(1 0 0 1 316.4624 1274.9966)" fill="#77787B"  font-size="10">1970s to present</text>
 			</g>
 		</g>
-		<g id="ids">
-			<text transform="matrix(1 0 0 1 194.3633 1075.4478)" fill="#232120" font-family="'ArialMT'" font-size="10">Institute of </text>
-			<text transform="matrix(1 0 0 1 194.3633 1089.8481)" fill="#232120" font-family="'ArialMT'" font-size="10">Development </text>
-			<text transform="matrix(1 0 0 1 194.3633 1104.2466)" fill="#232120" font-family="'ArialMT'" font-size="10">Studies </text>
+		<g id="ids" class="name">
+			<text transform="matrix(1 0 0 1 194.3633 1075.4478)" fill="#232120"  font-size="10">Institute of </text>
+			<text transform="matrix(1 0 0 1 194.3633 1089.8481)" fill="#232120"  font-size="10">Development </text>
+			<text transform="matrix(1 0 0 1 194.3633 1104.2466)" fill="#232120"  font-size="10">Studies </text>
 			<g>
-				<text transform="matrix(1 0 0 1 194.3633 1118.647)" fill="#77787B" font-family="'ArialMT'" font-size="10">1966 to present</text>
+				<text transform="matrix(1 0 0 1 194.3633 1118.647)" fill="#77787B"  font-size="10">1966 to present</text>
 			</g>
 		</g>
-		<g id="do">
-			<text transform="matrix(1 0 0 1 279.0156 1038.1729)" fill="#232120" font-family="'ArialMT'" font-size="10">Donor Organizations </text>
-			<text transform="matrix(1 0 0 1 279.0156 1052.5732)" fill="#232120" font-family="'ArialMT'" font-size="10">(USAID, SIDA, DFID)</text>
+		<g id="do" class="name">
+			<text transform="matrix(1 0 0 1 279.0156 1038.1729)" fill="#232120"  font-size="10">Donor Organizations </text>
+			<text transform="matrix(1 0 0 1 279.0156 1052.5732)" fill="#232120"  font-size="10">(USAID, SIDA, DFID)</text>
 			<g>
-				<text transform="matrix(1 0 0 1 279.0156 1066.9717)" fill="#77787B" font-family="'ArialMT'" font-size="10">1970s to present</text>
+				<text transform="matrix(1 0 0 1 279.0156 1066.9717)" fill="#77787B"  font-size="10">1970s to present</text>
 			</g>
 		</g>
 	</g>
@@ -614,7 +605,7 @@
 		<g id="Background_6_">
 			<g id="field_name">
 				<g>
-					<text transform="matrix(1 0 0 1 886.9297 619.7212)" fill="#232120" font-family="'ArialMT'" font-size="21">YOUTH DEVELOPMENT</text>
+					<text transform="matrix(1 0 0 1 886.9297 619.7212)" fill="#232120"  font-size="21">YOUTH DEVELOPMENT</text>
 				</g>
 			</g>
 		</g>
@@ -834,84 +825,84 @@
 		</g>
 	</g>
 	<g id="Entities">
-		<g id="cpcs">
-			<text transform="matrix(1 0 0 1 994.0918 745.5845)" fill="#232120" font-family="'ArialMT'" font-size="10">&quot;Children Participation </text>
-			<text transform="matrix(1 0 0 1 994.0918 759.9858)" fill="#232120" font-family="'ArialMT'" font-size="10"> </text>
-			<text transform="matrix(1 0 0 1 996.2119 759.9858)" fill="#232120" font-family="'ArialMT'" font-size="10"> </text>
-			<text transform="matrix(1 0 0 1 997.5322 759.9858)" fill="#232120" font-family="'ArialMT'" font-size="10">in Community Settings&quot; </text>
-			<text transform="matrix(1 0 0 1 994.0918 774.3872)" fill="#7D7D7D" font-family="'ArialMT'" font-size="10">  </text>
+		<g id="cpcs" class="name">
+			<text transform="matrix(1 0 0 1 994.0918 745.5845)" fill="#232120"  font-size="10">&quot;Children Participation </text>
+			<text transform="matrix(1 0 0 1 994.0918 759.9858)" fill="#232120"  font-size="10"> </text>
+			<text transform="matrix(1 0 0 1 996.2119 759.9858)" fill="#232120"  font-size="10"> </text>
+			<text transform="matrix(1 0 0 1 997.5322 759.9858)" fill="#232120"  font-size="10">in Community Settings&quot; </text>
+			<text transform="matrix(1 0 0 1 994.0918 774.3872)" fill="#7D7D7D"  font-size="10">  </text>
 			<g>
-				<text transform="matrix(1 0 0 1 998.3311 774.3872)" fill="#77787B" font-family="'ArialMT'" font-size="10">2000</text>
+				<text transform="matrix(1 0 0 1 998.3311 774.3872)" fill="#77787B"  font-size="10">2000</text>
 			</g>
 		</g>
-		<g id="lynch">
-			<text transform="matrix(1 0 0 1 255.1631 659.519)" font-family="'ArialMT'" font-size="10">Kevin Lynch </text>
+		<g id="lynch" class="name">
+			<text transform="matrix(1 0 0 1 255.1631 659.519)"  font-size="10">Kevin Lynch </text>
 			<g>
-				<text transform="matrix(1 0 0 1 255.1631 673.9194)" fill="#77787B" font-family="'ArialMT'" font-size="10">1960 to 1980s</text>
+				<text transform="matrix(1 0 0 1 255.1631 673.9194)" fill="#77787B"  font-size="10">1960 to 1980s</text>
 			</g>
 		</g>
-		<g id="guc1">
-			<text transform="matrix(1 0 0 1 280.2378 871.6401)" fill="#232120" font-family="'ArialMT'" font-size="10">Growing up</text>
-			<text transform="matrix(1 0 0 1 280.2378 886.0415)" fill="#232120" font-family="'ArialMT'" font-size="10"> in Cities </text>
+		<g id="guc1" class="name">
+			<text transform="matrix(1 0 0 1 280.2378 871.6401)" fill="#232120"  font-size="10">Growing up</text>
+			<text transform="matrix(1 0 0 1 280.2378 886.0415)" fill="#232120"  font-size="10"> in Cities </text>
 			<g>
-				<text transform="matrix(1 0 0 1 280.2378 900.4424)" fill="#77787B" font-family="'ArialMT'" font-size="10">1977 to 1980s</text>
+				<text transform="matrix(1 0 0 1 280.2378 900.4424)" fill="#77787B"  font-size="10">1977 to 1980s</text>
 			</g>
 		</g>
-		<g id="chawla">
+		<g id="chawla" class="name">
 			<g>
-				<text transform="matrix(1 0 0 1 746.9443 943.2656)" fill="#77787B" font-family="'ArialMT'" font-size="10">1990s to </text>
+				<text transform="matrix(1 0 0 1 746.9443 943.2656)" fill="#77787B"  font-size="10">1990s to </text>
 			</g>
 			<g>
-				<text transform="matrix(1 0 0 1 746.9443 957.666)" fill="#77787B" font-family="'ArialMT'" font-size="10">present</text>
+				<text transform="matrix(1 0 0 1 746.9443 957.666)" fill="#77787B"  font-size="10">present</text>
 			</g>
-			<text transform="matrix(1 0 0 1 746.9443 928.8652)" font-family="'ArialMT'" font-size="10">Louise Chawla</text>
+			<text transform="matrix(1 0 0 1 746.9443 928.8652)"  font-size="10">Louise Chawla</text>
 		</g>
-		<g id="crc">
-			<text transform="matrix(1 0 0 1 615.7295 805.8208)" fill="#232120" font-family="'ArialMT'" font-size="10">Convention on </text>
-			<text transform="matrix(1 0 0 1 615.7295 820.2192)" fill="#232120" font-family="'ArialMT'" font-size="10">the Rights of </text>
-			<text transform="matrix(1 0 0 1 615.7295 834.6196)" fill="#232120" font-family="'ArialMT'" font-size="10">the Child</text>
+		<g id="crc" class="name">
+			<text transform="matrix(1 0 0 1 615.7295 805.8208)" fill="#232120"  font-size="10">Convention on </text>
+			<text transform="matrix(1 0 0 1 615.7295 820.2192)" fill="#232120"  font-size="10">the Rights of </text>
+			<text transform="matrix(1 0 0 1 615.7295 834.6196)" fill="#232120"  font-size="10">the Child</text>
 			<g>
-				<text transform="matrix(1 0 0 1 615.7295 849.019)" fill="#77787B" font-family="'ArialMT'" font-size="10">1989 to present</text>
-			</g>
-		</g>
-		<g id="unicefirc">
-			<text transform="matrix(1 0 0 1 607.0811 719.4888)" fill="#232120" font-family="'ArialMT'" font-size="10">UNICEF Innocenti</text>
-			<text transform="matrix(1 0 0 1 607.0811 733.8901)" fill="#232120" font-family="'ArialMT'" font-size="10">Research Centre</text>
-			<g>
-				<text transform="matrix(1 0 0 1 607.0811 748.2915)" fill="#77787B" font-family="'ArialMT'" font-size="10">1988 to present</text>
+				<text transform="matrix(1 0 0 1 615.7295 849.019)" fill="#77787B"  font-size="10">1989 to present</text>
 			</g>
 		</g>
-		<g id="hart">
-			<text transform="matrix(1 0 0 1 372.7837 654.354)" fill="#232120" font-family="'ArialMT'" font-size="10">Roger Hart</text>
+		<g id="unicefirc" class="name">
+			<text transform="matrix(1 0 0 1 607.0811 719.4888)" fill="#232120"  font-size="10">UNICEF Innocenti</text>
+			<text transform="matrix(1 0 0 1 607.0811 733.8901)" fill="#232120"  font-size="10">Research Centre</text>
 			<g>
-				<text transform="matrix(1 0 0 1 372.7837 668.7524)" fill="#77787B" font-family="'ArialMT'" font-size="10">1970s to </text>
-			</g>
-			<g>
-				<text transform="matrix(1 0 0 1 372.7837 683.1509)" fill="#77787B" font-family="'ArialMT'" font-size="10">present</text>
+				<text transform="matrix(1 0 0 1 607.0811 748.2915)" fill="#77787B"  font-size="10">1988 to present</text>
 			</g>
 		</g>
-		<g id="moore">
-			<text transform="matrix(1 0 0 1 378.2373 750.7622)" font-family="'ArialMT'" font-size="10">Robin Moore</text>
+		<g id="hart" class="name">
+			<text transform="matrix(1 0 0 1 372.7837 654.354)" fill="#232120"  font-size="10">Roger Hart</text>
 			<g>
-				<text transform="matrix(1 0 0 1 378.2373 765.1626)" fill="#77787B" font-family="'ArialMT'" font-size="10">1970s to present</text>
+				<text transform="matrix(1 0 0 1 372.7837 668.7524)" fill="#77787B"  font-size="10">1970s to </text>
+			</g>
+			<g>
+				<text transform="matrix(1 0 0 1 372.7837 683.1509)" fill="#77787B"  font-size="10">present</text>
 			</g>
 		</g>
-		<g id="guc2">
-			<text transform="matrix(1 0 0 1 784.6436 877.1069)" fill="#232120" font-family="'ArialMT'" font-size="10">Growing up in Cities </text>
+		<g id="moore" class="name">
+			<text transform="matrix(1 0 0 1 378.2373 750.7622)"  font-size="10">Robin Moore</text>
 			<g>
-				<text transform="matrix(1 0 0 1 784.6436 891.5063)" fill="#77787B" font-family="'ArialMT'" font-size="10">1997 to 2006</text>
+				<text transform="matrix(1 0 0 1 378.2373 765.1626)" fill="#77787B"  font-size="10">1970s to present</text>
 			</g>
 		</g>
-		<g id="adg21">
-			<text transform="matrix(1 0 0 1 711.4111 671.4888)" fill="#232120" font-family="'ArialMT'" font-size="10">Agenda 21</text>
+		<g id="guc2" class="name">
+			<text transform="matrix(1 0 0 1 784.6436 877.1069)" fill="#232120"  font-size="10">Growing up in Cities </text>
 			<g>
-				<text transform="matrix(1 0 0 1 711.4111 685.8872)" fill="#77787B" font-family="'ArialMT'" font-size="10">1992 to present</text>
+				<text transform="matrix(1 0 0 1 784.6436 891.5063)" fill="#77787B"  font-size="10">1997 to 2006</text>
 			</g>
 		</g>
-		<g id="driskell">
-			<text transform="matrix(1 0 0 1 746.9434 602.7319)" font-family="'ArialMT'" font-size="10">David Driskell</text>
+		<g id="adg21" class="name">
+			<text transform="matrix(1 0 0 1 711.4111 671.4888)" fill="#232120"  font-size="10">Agenda 21</text>
 			<g>
-				<text transform="matrix(1 0 0 1 746.9434 617.1294)" fill="#77787B" font-family="'ArialMT'" font-size="10">1990s to present</text>
+				<text transform="matrix(1 0 0 1 711.4111 685.8872)" fill="#77787B"  font-size="10">1992 to present</text>
+			</g>
+		</g>
+		<g id="driskell" class="name">
+			<text transform="matrix(1 0 0 1 746.9434 602.7319)"  font-size="10">David Driskell</text>
+			<g>
+				<text transform="matrix(1 0 0 1 746.9434 617.1294)" fill="#77787B"  font-size="10">1990s to present</text>
 			</g>
 		</g>
 	</g>
@@ -984,11 +975,11 @@
 	<g id="in_timeline">
 		<g>
 			<rect x="1003.627" y="467.245" fill="none" width="112.831" height="9.999"/>
-			<text transform="matrix(1 0 0 1 1003.627 472.9575)" fill="#333334" font-family="'ArialMT'" font-size="8">LEGEND</text>
+			<text transform="matrix(1 0 0 1 1003.627 472.9575)" fill="#333334"  font-size="8">LEGEND</text>
 		</g>
 		<g>
 			<rect x="1034.169" y="481.542" fill="none" width="112.831" height="9.999"/>
-			<text transform="matrix(1 0 0 1 1034.1689 487.2544)" fill="#333334" font-family="'ArialMT'" font-size="8">Close mutual relationship</text>
+			<text transform="matrix(1 0 0 1 1034.1689 487.2544)" fill="#333334"  font-size="8">Close mutual relationship</text>
 		</g>
 		<g>
 			<g>
@@ -1006,7 +997,7 @@
 		</g>
 		<g>
 			<rect x="1034.169" y="499.542" fill="none" width="112.831" height="10.999"/>
-			<text transform="matrix(1 0 0 1 1034.1689 505.2544)" fill="#333334" font-family="'ArialMT'" font-size="8">One-way strong influence</text>
+			<text transform="matrix(1 0 0 1 1034.1689 505.2544)" fill="#333334"  font-size="8">One-way strong influence</text>
 		</g>
 		<g>
 			<g>
@@ -1020,7 +1011,7 @@
 		</g>
 		<g>
 			<rect x="1034.169" y="517.792" fill="none" width="77.831" height="9.665"/>
-			<text transform="matrix(1 0 0 1 1034.1689 523.5044)" fill="#333334" font-family="'ArialMT'" font-size="8">Mutual influence</text>
+			<text transform="matrix(1 0 0 1 1034.1689 523.5044)" fill="#333334"  font-size="8">Mutual influence</text>
 		</g>
 		<g>
 			<g>
@@ -1039,7 +1030,7 @@
 		</g>
 		<g>
 			<rect x="1034.169" y="534.792" fill="none" width="112.831" height="10.665"/>
-			<text transform="matrix(1 0 0 1 1034.1689 540.5044)" fill="#333334" font-family="'ArialMT'" font-size="8">One-way influence</text>
+			<text transform="matrix(1 0 0 1 1034.1689 540.5044)" fill="#333334"  font-size="8">One-way influence</text>
 		</g>
 		<g>
 			<g>
@@ -1061,11 +1052,11 @@
 	<g id="in_timeline_1_">
 		<g>
 			<rect x="1003.627" y="1931.245" fill="none" width="112.831" height="10"/>
-			<text transform="matrix(1 0 0 1 1003.627 1936.9575)" fill="#333334" font-family="'ArialMT'" font-size="8">LEGEND</text>
+			<text transform="matrix(1 0 0 1 1003.627 1936.9575)" fill="#333334"  font-size="8">LEGEND</text>
 		</g>
 		<g>
 			<rect x="1034.169" y="1945.542" fill="none" width="112.831" height="10"/>
-			<text transform="matrix(1 0 0 1 1034.1689 1951.2544)" fill="#333334" font-family="'ArialMT'" font-size="8">Close mutual relationship</text>
+			<text transform="matrix(1 0 0 1 1034.1689 1951.2544)" fill="#333334"  font-size="8">Close mutual relationship</text>
 		</g>
 		<g>
 			<g>
@@ -1083,7 +1074,7 @@
 		</g>
 		<g>
 			<rect x="1034.169" y="1963.542" fill="none" width="112.831" height="11"/>
-			<text transform="matrix(1 0 0 1 1034.1689 1969.2544)" fill="#333334" font-family="'ArialMT'" font-size="8">One-way strong influence</text>
+			<text transform="matrix(1 0 0 1 1034.1689 1969.2544)" fill="#333334"  font-size="8">One-way strong influence</text>
 		</g>
 		<g>
 			<g>
@@ -1097,7 +1088,7 @@
 		</g>
 		<g>
 			<rect x="1034.169" y="1981.792" fill="none" width="77.831" height="9.666"/>
-			<text transform="matrix(1 0 0 1 1034.1689 1987.5044)" fill="#333334" font-family="'ArialMT'" font-size="8">Mutual influence</text>
+			<text transform="matrix(1 0 0 1 1034.1689 1987.5044)" fill="#333334"  font-size="8">Mutual influence</text>
 		</g>
 		<g>
 			<g>
@@ -1116,7 +1107,7 @@
 		</g>
 		<g>
 			<rect x="1034.169" y="1998.792" fill="none" width="112.831" height="10.666"/>
-			<text transform="matrix(1 0 0 1 1034.1689 2004.5044)" fill="#333334" font-family="'ArialMT'" font-size="8">One-way influence</text>
+			<text transform="matrix(1 0 0 1 1034.1689 2004.5044)" fill="#333334"  font-size="8">One-way influence</text>
 		</g>
 		<g>
 			<g>
@@ -1138,26 +1129,26 @@
 </g>
 <g id="Years">
 	<g>
-		<text transform="matrix(1 0 0 1 66.0039 80.5083)" fill="#232120" font-family="'ArialMT'" font-size="18">1960s</text>
+		<text transform="matrix(1 0 0 1 66.0039 80.5083)" fill="#232120"  font-size="18">1960s</text>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 274.5308 80.5083)" fill="#232120" font-family="'ArialMT'" font-size="18">1970s</text>
+		<text transform="matrix(1 0 0 1 274.5308 80.5083)" fill="#232120"  font-size="18">1970s</text>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 483.0576 80.5083)" fill="#232120" font-family="'ArialMT'" font-size="18">1980s</text>
+		<text transform="matrix(1 0 0 1 483.0576 80.5083)" fill="#232120"  font-size="18">1980s</text>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 691.585 80.5083)" fill="#232120" font-family="'ArialMT'" font-size="18">1990s</text>
+		<text transform="matrix(1 0 0 1 691.585 80.5083)" fill="#232120"  font-size="18">1990s</text>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 900.1113 80.5083)" fill="#232120" font-family="'ArialMT'" font-size="18">2000s</text>
+		<text transform="matrix(1 0 0 1 900.1113 80.5083)" fill="#232120"  font-size="18">2000s</text>
 	</g>
 </g>
 <g id="Community_Design_1_">
 	<g id="Background_9_">
 		<g>
 			<g>
-				<text transform="matrix(1 0 0 1 909.8887 155.5474)" fill="#232120" font-family="'ArialMT'" font-size="21">COMMUNITY DESIGN</text>
+				<text transform="matrix(1 0 0 1 909.8887 155.5474)" fill="#232120"  font-size="21">COMMUNITY DESIGN</text>
 			</g>
 		</g>
 	</g>
@@ -1378,32 +1369,32 @@
 		</g>
 	</g>
 	<g id="Entities_5_">
-		<g id="alinsky_1_">
+		<g id="alinsky" class="name">
 			<text transform="matrix(1 0 0 1 65.6255 143.0142)" fill="#232120" font-family="'HelveticaNeue'" font-size="10">Saul Alinsky</text>
 			<g>
 				<text transform="matrix(1 0 0 1 65.6255 157.4146)" fill="#77787B" font-family="'HelveticaNeue'" font-size="10">1960s to 1990s</text>
 			</g>
 		</g>
-		<g id="prpcdn_1_">
+		<g id="prpcdn" class="name">
 			<text transform="matrix(1 0 0 1 840.2744 226.1714)" fill="#232120" font-family="'HelveticaNeue-Italic'" font-size="10">Pacific Rim Participatory </text>
 			<text transform="matrix(1 0 0 1 840.2744 240.5698)" fill="#232120" font-family="'HelveticaNeue-Italic'" font-size="10">Community Design Conference </text>
 			<g>
 				<text transform="matrix(1 0 0 1 840.2744 254.9702)" fill="#77787B" font-family="'HelveticaNeue-Italic'" font-size="10">1998 to Present</text>
 			</g>
 		</g>
-		<g id="davidoff_1_">
+		<g id="davidoff=" class="name">
 			<text transform="matrix(1 0 0 1 172.2739 144.021)" font-family="'HelveticaNeue'" font-size="10">Paul Davidoff</text>
 			<g>
 				<text transform="matrix(1 0 0 1 172.2739 158.4194)" fill="#77787B" font-family="'HelveticaNeue'" font-size="10">1960s to 1980s</text>
 			</g>
 		</g>
-		<g id="hester_1_">
+		<g id="hester" class="name">
 			<text transform="matrix(1 0 0 1 424.9272 380.3228)" font-family="'HelveticaNeue'" font-size="9">Randy Hester</text>
 			<g>
 				<text transform="matrix(1 0 0 1 424.9272 394.7222)" fill="#77787B" font-family="'HelveticaNeue'" font-size="9">1970s to Present</text>
 			</g>
 		</g>
-		<g id="and_1_">
+		<g id="and" class="name">
 			<text transform="matrix(1 0 0 1 316.4624 201.1714)" font-family="'HelveticaNeue-Italic'" font-size="10">Asian </text>
 			<text transform="matrix(1 0 0 1 316.4624 213.9263)" font-family="'HelveticaNeue-Italic'" font-size="10">Neighborhood </text>
 			<text transform="matrix(1 0 0 1 316.4624 226.6831)" font-family="'HelveticaNeue-Italic'" font-size="10">Design </text>
@@ -1411,13 +1402,13 @@
 				<text transform="matrix(1 0 0 1 316.4624 241.0815)" fill="#77787B" font-family="'HelveticaNeue-Italic'" font-size="10">1973 to Present</text>
 			</g>
 		</g>
-		<g id="halprin_1_">
+		<g id="halprin" class="name">
 			<text transform="matrix(1 0 0 1 238.0791 363.396)" font-family="'HelveticaNeue'" font-size="10">Lawrence Halprin</text>
 			<g>
 				<text transform="matrix(1 0 0 1 238.0791 377.7944)" fill="#77787B" font-family="'HelveticaNeue'" font-size="10">1960s to 2000s</text>
 			</g>
 		</g>
-		<g id="acd_1_">
+		<g id="acd" class="name">
 			<text transform="matrix(1 0 0 1 368.3125 122.9077)" font-family="'HelveticaNeue-Italic'" font-size="10">Association for </text>
 			<text transform="matrix(1 0 0 1 368.3125 135.6646)" font-family="'HelveticaNeue-Italic'" font-size="10">Community </text>
 			<text transform="matrix(1 0 0 1 368.3125 148.4194)" font-family="'HelveticaNeue-Italic'" font-size="10">Design Inc. </text>
@@ -1425,13 +1416,13 @@
 				<text transform="matrix(1 0 0 1 368.3125 162.8188)" fill="#77787B" font-family="'HelveticaNeue-Italic'" font-size="10">1977 to Present</text>
 			</g>
 		</g>
-		<g id="sanoff_1_">
+		<g id="sanoff" class="name">
 			<text transform="matrix(1 0 0 1 235.9609 434.8101)" font-family="'HelveticaNeue'" font-size="10">Henry Sanoff</text>
 			<g>
 				<text transform="matrix(1 0 0 1 235.9609 449.2095)" fill="#77787B" font-family="'HelveticaNeue'" font-size="10">1960s to Present</text>
 			</g>
 		</g>
-		<g id="curry_1_">
+		<g id="curry" class="name">
 			<text transform="matrix(1 0 0 1 143.9268 246.4116)" font-family="'HelveticaNeue'" font-size="10">Rex Curry</text>
 			<g>
 				<text transform="matrix(1 0 0 1 143.9268 260.8101)" fill="#77787B" font-family="'HelveticaNeue'" font-size="10">1960s to</text>
@@ -1440,37 +1431,37 @@
 				<text transform="matrix(1 0 0 1 143.9268 275.2104)" fill="#77787B" font-family="'HelveticaNeue'" font-size="10">2000s</text>
 			</g>
 		</g>
-		<g id="hamdi_1_">
+		<g id="hamdi" class="name">
 			<text transform="matrix(1 0 0 1 603.3975 473.481)" fill="#232120" font-family="'HelveticaNeue'" font-size="10">Nabeel Hamdi</text>
 			<g>
 				<text transform="matrix(1 0 0 1 603.3975 487.8804)" fill="#77787B" font-family="'HelveticaNeue'" font-size="10">1980s to Present</text>
 			</g>
 		</g>
-		<g id="miginc_1_">
+		<g id="miginc" class="name">
 			<text transform="matrix(1 0 0 1 543.0791 432.0679)" font-family="'HelveticaNeue-Italic'" font-size="10">MIG Inc.</text>
 			<g>
 				<text transform="matrix(1 0 0 1 543.0791 446.4683)" fill="#77787B" font-family="'HelveticaNeue-Italic'" font-size="10">1980s to Present</text>
 			</g>
 		</g>
-		<g id="arnstein_1_">
+		<g id="arnstein" class="name">
 			<text transform="matrix(1 0 0 1 214.9595 544.1597)" font-family="'HelveticaNeue'" font-size="10">Sherry Arnstein</text>
 			<g>
 				<text transform="matrix(1 0 0 1 214.9595 558.5601)" fill="#77787B" font-family="'HelveticaNeue'" font-size="10">1960s to 1970s</text>
 			</g>
 		</g>
-		<g id="francis_1_">
+		<g id="francis" class="name">
 			<text transform="matrix(1 0 0 1 534.0791 395.8853)" fill="#232120" font-family="'HelveticaNeue'" font-size="10">Mark Francis</text>
 			<g>
 				<text transform="matrix(1 0 0 1 534.0791 410.2856)" fill="#77787B" font-family="'HelveticaNeue'" font-size="10">1980s to 2000s</text>
 			</g>
 		</g>
-		<g id="hou_1_">
+		<g id="hou" class="name">
 			<text transform="matrix(1 0 0 1 797.6182 340.1724)" font-family="'HelveticaNeue'" font-size="10">Jeffrey Hou</text>
 			<g>
 				<text transform="matrix(1 0 0 1 797.6182 354.5718)" fill="#77787B" font-family="'HelveticaNeue'" font-size="10">1990s to Present</text>
 			</g>
 		</g>
-		<g id="linn_1_">
+		<g id="linn" class="name">
 			<text transform="matrix(1 0 0 1 64.4683 434.4185)" fill="#232120" font-family="'HelveticaNeue'" font-size="10">Karl Linn</text>
 			<g>
 				<text transform="matrix(1 0 0 1 64.4683 448.8188)" fill="#77787B" font-family="'HelveticaNeue'" font-size="10">1960s to</text>
@@ -1479,7 +1470,7 @@
 				<text transform="matrix(1 0 0 1 64.4683 463.2202)" fill="#77787B" font-family="'HelveticaNeue'" font-size="10">1990s</text>
 			</g>
 		</g>
-		<g id="arch_1_">
+		<g id="arch" class="name">
 			<text transform="matrix(1 0 0 1 131.9858 339.6353)" font-family="'HelveticaNeue-Italic'" font-size="10">Architectural </text>
 			<text transform="matrix(1 0 0 1 131.9858 352.3921)" font-family="'HelveticaNeue-Italic'" font-size="10">Renewal </text>
 			<text transform="matrix(1 0 0 1 131.9858 365.147)" font-family="'HelveticaNeue-Italic'" font-size="10">Committee in </text>
@@ -1488,7 +1479,7 @@
 				<text transform="matrix(1 0 0 1 131.9858 392.3042)" fill="#77787B" font-family="'HelveticaNeue'" font-size="10">1963 to 1970s</text>
 			</g>
 		</g>
-		<g id="arc_1_">
+		<g id="arc" class="name">
 			<text transform="matrix(1 0 0 1 66.6392 224.4097)" font-family="'HelveticaNeue-Italic'" font-size="10">Architecture</text>
 			<text transform="matrix(1 0 0 1 66.6392 237.1646)" font-family="'HelveticaNeue-Italic'" font-size="10">Research</text>
 			<text transform="matrix(1 0 0 1 66.6392 249.9214)" font-family="'HelveticaNeue-Italic'" font-size="10">Construction </text>
@@ -1500,7 +1491,7 @@
 				<text transform="matrix(1 0 0 1 66.6392 291.4771)" fill="#77787B" font-family="'HelveticaNeue'" font-size="10">Present</text>
 			</g>
 		</g>
-		<g id="krumholz_1_">
+		<g id="krumholz" class="name">
 			<text transform="matrix(1 0 0 1 214.3652 306.2827)" font-family="'HelveticaNeue'" font-size="10">Norman Krumholz</text>
 			<g>
 				<text transform="matrix(1 0 0 1 214.3652 320.6812)" fill="#77787B" font-family="'HelveticaNeue'" font-size="10">1960s to Present</text>

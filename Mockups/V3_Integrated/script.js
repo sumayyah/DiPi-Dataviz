@@ -1,44 +1,26 @@
 $(document).ready(function(){
 
-	// var width = $(window).width()+"px";
 	var width = 1235+"px";
 	$('#popupDiv').css({'min-width':width});
 	$('nav').css({'min-width':width});
 	$("#content").css({'min-width':width});
 	$('footer').css({'min-width':width});
-	// TODO: what if this is a really wide window? 
-	console.log("width is "+width);
-
-	// $(window).resize(function(){
-	// 	console.log("width is "+$(window).width());
-	// });
-	// $(window).resize(function(){
-	// 	// To get make sure pages do fill the screen, but don't squash content - works when you start small(squashed)->big, resize ok; Big to small ok; Start small is an issue
-	// 	var width = $(window).width()+"px";
-	// 	$('#popupDiv').css({'width':width});
-	// 	$('nav').css({'width':width});
-	// 	$("#content").css({'width':width});
-	// 	$('footer').css({'width':width});
-	// 	// TODO: what if this is a really wide window? 
-	// 	console.log("width is "+width);
-	// });
 
 	console.log("Ready!");
 	$("#popupDiv").slideUp(10);
 
 	var jsonDataObj;
 
-	jQuery.getJSON("materials/entities_info2.json", function(data){
+	jQuery.getJSON("materials/entities_info2_PD.json", function(data){
 		console.log("Got file data!");
 		jsonDataObj = data.items;
-		
 	});
 
 	/***** ANIMATE SVG *****/
 
 	var paper = Snap("#paper");
 
-	Snap.load("materials/timeline4.svg", onSVGLoaded);
+	Snap.load("materials/timeline5.svg", onSVGLoaded);
 
 	var yearsGroup;
 	var entitiesGroup;
@@ -113,40 +95,45 @@ $(document).ready(function(){
 
 		switch(id){
 			case 'cdev':
-				console.log("clicked comm dev!");
-				$("html, body").animate({scrollTop: $("#Community_Design").position().top-150}, 1000);
+				console.log("clicked comm dev! "+$("#Community_Design").position().top);//This value is way off in chrome, it's 116
+				// $("html, body").animate({scrollTop: $("#Community_Design").position().top-150}, 1000); $(nav).height()
+				$("html, body").animate({scrollTop: "588px"}, 1000);
 				$("#"+id).css({"color":"#ED1C25"});
 				$("a:not(#cdev)").css({"color":"white"});
 				return true;
 			break;
 
 			case 'ydev':
-				console.log("clicked youth!");
-				$("html, body").animate({scrollTop: $("#Youth_Development").position().top-150}, 1000);
+				console.log("clicked youth!"+ $("#Youth_Development").position().top);
+				// $("html, body").animate({scrollTop: $("#Youth_Development").position().top-150}, 1000);
+				$("html, body").animate({scrollTop: 912}, 1000);
 				$("#"+id).css({"color":"#ED1C25"});
 				$("a:not(#ydev)").css({"color":"white"});
 				return true;
 			break;
 
 			case 'iDev':
-				console.log("clicked international dev!");
-				$("html, body").animate({scrollTop: $("#International_Development").position().top-150}, 1000);
+				console.log("clicked international dev!"+$("#International_Development").position().top);
+				// $("html, body").animate({scrollTop: $("#International_Development").position().top-150}, 1000);
+				$("html, body").animate({scrollTop: 1460}, 1000);
 				$("#"+id).css({"color":"#ED1C25"});
 				$("a:not(#iDev)").css({"color":"white"});
 				return true;
 			break;
 
 			case 'health':
-				console.log("clicked health!");
-				$("html, body").animate({scrollTop: $("#Public_Health").position().top-150}, 1000);
+				console.log("clicked health!"+$("#Public_Health").position().top);
+				// $("html, body").animate({scrollTop: $("#Public_Health").position().top-150}, 1000);
+				$("html, body").animate({scrollTop: 1910}, 1000);
 				$("#"+id).css({"color":"#ED1C25"});
 				$("a:not(#health)").css({"color":"white"});
 				return true;
 			break;
 
 			case 'tech':
-				console.log("clicked tech!");
-				$("html, body").animate({scrollTop: $("#Technology_Development").position().top-150}, 1000);
+				console.log("clicked tech!"+$("#Technology_Development").position().top);
+				// $("html, body").animate({scrollTop: $("#Technology_Development").position().top-150}, 1000);
+				$("html, body").animate({scrollTop: 2038}, 1000);
 				$("#"+id).css({"color":"#ED1C25"});
 				$("a:not(#tech)").css({"color":"white"});
 				return true;
