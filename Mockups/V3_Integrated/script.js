@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 	var paper = Snap("#paper");
 
-	Snap.load("materials/timeline5.svg", onSVGLoaded);
+	Snap.load("materials/timeline4.svg", onSVGLoaded);
 
 	var yearsGroup;
 	var entitiesGroup;
