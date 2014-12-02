@@ -77,38 +77,35 @@ nav h1{
 
 	padding-bottom: 250px;
 
-	overflow: scroll;
+	/*overflow: auto;*/
 
 }
-.content ul, .content li{
+
+.column ul{
 	list-style: none;
 	margin: none;
-}
-.content ul{
 	overflow: auto;
 	padding: none;
 	margin-top: 3em;
 	margin-bottom: 3em;
 }
-.content ul li{
+#downloadables ul li{
 	float: left;
+	display: block;
 }
 .column ul li img{
-	display: block;
 	margin-right: 3em;
 	margin-bottom: 3em;
 }
 .column ul li img:hover{
 	cursor: pointer;
 }
-#publications ul li{
-	display: inline;
-}
+
 .content a{
 	color: black;
 }
 .content .column{
-	width: 80%;
+	width: 100%;
 	font-size: 0.75em;
 	margin-left: 15px;
 	margin-bottom: 100px;
@@ -141,18 +138,11 @@ nav h1{
 .column_sm ul{
 	margin-left: 50px;
 }
-/*.icon{
-	padding-top: 10px;
-	padding-bottom: 10px;
-}*/
+
 .downloadable{
 	position: relative;
 	width: 237px;
 }
-/*.section{
-	padding: 15px;
-	margin-bottom: 20px;
-}*/
 
 .hovered{
 	cursor: pointer;
