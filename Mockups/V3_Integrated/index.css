@@ -47,7 +47,7 @@ nav ul li{
 	padding: 0px 8px 0px;
 	/*padding-left: 8px;
 	padding-right: 8px;*/
-	margin-right: 2px;
+	/*margin-right: 2px;*/
 	vertical-align: text-bottom;
 
 	/*margin-top: 5%;*/
@@ -71,6 +71,7 @@ a:visited, a:hover{
 	float: left;
 	padding: 8px 0px 0px;
 	/*margin-top: 2%;*/
+	margin-right: 50px;
 }#title{
 	line-height: 33px;
 }
@@ -167,14 +168,13 @@ h1{
 	display: flex;
 	display: -webkit-flex;
 	display: -webkit-box;
-	justify-content:center;
+	justify-content:left;
 
 	padding-top: 25px;
 	padding-bottom: 40px;
 	padding-left: 2%;
 	padding-right: 40px;
 	overflow: auto;
-	overflow-x: scroll;
 
 	-moz-box-shadow: 0px -2px 5px 0.5px #888;
 	-webkit-box-shadow: 0px -2px 5px 0.5px #888;
@@ -182,7 +182,7 @@ h1{
 } 
 
 .column{
-	width: 370px;
+	width: 18%;
 	font-size: 0.75em;
 	margin-right: 15px;
 	margin-left: 15px;
@@ -213,7 +213,7 @@ h1{
 
 #col4{
 	text-align: right;
-	margin-right: 70px;
+	/*margin-right: 200px;*/
 	margin-top: -20px;
 }
 #col4 span{

@@ -6,6 +6,14 @@ $(document).ready(function(){
 	$("#content").css({'min-width':width});
 	$('footer').css({'min-width':width});
 
+	var windowWidth = $(window).width()+"px";
+	var svgWidth = 1550+"px";
+
+	$('#navContainer').css({'max-width':svgWidth});
+	$("#content").css({'max-width':windowWidth});
+	$('footer').css({'max-width':windowWidth});
+
+
 	console.log("Ready!");
 	$("#popupDiv").slideUp(10);
 
@@ -20,7 +28,7 @@ $(document).ready(function(){
 
 	var paper = Snap("#paper");
 
-	Snap.load("materials/timeline4.svg", onSVGLoaded);
+	Snap.load("materials/timeline5.svg", onSVGLoaded);
 
 	var yearsGroup;
 	var entitiesGroup;
