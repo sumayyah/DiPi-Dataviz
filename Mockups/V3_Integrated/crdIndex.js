@@ -4,6 +4,7 @@ $(document).ready(function(){
 	$("#popupDiv").slideUp(10);
 
 	var width = 1235+"px";
+
 	$('#popupDiv').css({'min-width':width});
 	$('nav').css({'min-width':width});
 	$("#content").css({'min-width':width});

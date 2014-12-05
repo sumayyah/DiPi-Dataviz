@@ -66,7 +66,7 @@ nav h1{
 .content{
 	height: 100%;
 	margin-top: 150px;
-
+	width: 100%;
 	display: flex;
 	display: -webkit-flex;
 	display: -webkit-box;
@@ -105,16 +105,15 @@ nav h1{
 	color: black;
 }
 .content .column{
-	width: 100%;
+	width: 70%;
 	font-size: 0.75em;
 	margin-left: 15px;
 	margin-bottom: 100px;
 }
 
 .column_sm {
-	width: 20%;
+	width: 200px;
 	font-size: 0.75em;
-	padding-right: 5%;
 }
 .column_sm a{
 	color:#878989;
@@ -136,8 +135,8 @@ nav h1{
 }
 
 .column_sm ul{
-	margin-left: 50px;
-}
+/*	margin-left: 50px;
+*/}
 
 .downloadable{
 	position: relative;

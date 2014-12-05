@@ -56,7 +56,7 @@ $(document).ready(function(){
 		$('#navContainer').css({'width':svgWidth});
 		$('#footerContainer').css({'width':svgWidth});
 		$("#content").css({'max-width':windowWidth});
-		$('footer').css({'max-width':windowWidth});
+		$('footer').css({'max-width':'100%'});
 
 		communityDesign = whole.select("#Community_Design");
 		youthDevelopment = whole.select("#Youth_Development");
