@@ -155,7 +155,7 @@ $(document).ready(function(){
 
 	});
 
-	$('.navLinks a').hover(function(){
+	$('nav a').hover(function(){
 		var id = $(this).attr('id');
 		$("#"+id).css({"color":"#ED1C25"});
 	}, function(){

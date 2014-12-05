@@ -33,24 +33,13 @@ $(document).ready(function(){
 	});
 
 
-	$('a').click(function(e){
-		var id = $(this).attr('id');
-		// console.log("ID is "+id);
-
-		switch(id){
-
-			default:
-				console.log("wrong clicked item!");
-				break;
-		}
-	});
 
 	$('a').hover(function(){
 		var id = $(this).attr('id');
-		$("#"+id).css({"color":"#ED1C25"});
+		$("#"+id).css({"color":"#ED1C25"})
+		$("#"+id).css({"color":"white"});;
 	}, function(){
 		var id = $(this).attr('id');
-		$("#"+id).css({"color":"white"});
 	})
 
 	$('li').hover(function(){
