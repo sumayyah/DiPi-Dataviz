@@ -7,12 +7,7 @@ $(document).ready(function(){
 	$('footer').css({'min-width':width});
 
 	var windowWidth = $(window).width()+"px";
-	var svgWidth = 1550+"px";
-
-	$('#navContainer').css({'max-width':svgWidth});
-	$("#content").css({'max-width':windowWidth});
-	$('footer').css({'max-width':windowWidth});
-
+	
 
 	console.log("Ready!");
 	$("#popupDiv").slideUp(10);
@@ -48,9 +43,20 @@ $(document).ready(function(){
 
 		//Parse SVG file
 		
-		console.log("Loaded!");
-		
 		var whole = svgFile.select("#Layer1");
+		console.log("Loaded! "+whole.attr("width"));
+
+
+		/***************SET SVG-DEPENDENT WIDTHS************/
+
+		var svgWidth = whole.attr("width");
+
+		console.log("window svg footer "+windowWidth+" "+svgWidth+" "+$('footer').width());
+
+		$('#navContainer').css({'width':svgWidth});
+		$('#footerContainer').css({'width':svgWidth});
+		$("#content").css({'max-width':windowWidth});
+		$('footer').css({'max-width':windowWidth});
 
 		communityDesign = whole.select("#Community_Design");
 		youthDevelopment = whole.select("#Youth_Development");
@@ -95,6 +101,7 @@ $(document).ready(function(){
 
 		//Add to DOM
 		paper.append(svgFile);
+
 	}
 
 
@@ -178,6 +185,7 @@ $(document).ready(function(){
 					$("#aboutPerson").text(obj.AboutEntity);
 					$("#connections").text(obj.KeyConnections);
 					$("#publications").text(obj.KeyPublications);
+					$("#references").text(obj.Reference);
 					setCountry(obj.Geography);
 					
 					animateHiddenDiv();

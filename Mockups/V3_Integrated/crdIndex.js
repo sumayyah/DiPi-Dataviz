@@ -77,6 +77,7 @@ $(document).ready(function(){
 					$("#aboutPerson").text(obj.AboutEntity);
 					$("#connections").text(obj.KeyConnections);
 					$("#publications").text(obj.KeyPublications);
+					$("#references").text(obj.Reference);
 					setCountry(obj.Geography);
 					animateDiv();
 			}
