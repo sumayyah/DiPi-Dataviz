@@ -33,8 +33,6 @@ $(document).ready(function(){
 
 	});
 
-
-
 	$('a').hover(function(){
 		var id = $(this).attr('id');
 		$("#"+id).css({"color":"#ED1C25"})
@@ -79,6 +77,7 @@ $(document).ready(function(){
 					$("#connections").text(obj.KeyConnections);
 					$("#publications").text(obj.KeyPublications);
 					$("#references").text(obj.Reference);
+
 					setCountry(obj.Geography);
 					animateDiv();
 			}
