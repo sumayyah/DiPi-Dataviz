@@ -35,10 +35,11 @@ $(document).ready(function(){
 
 	$('a').hover(function(){
 		var id = $(this).attr('id');
-		$("#"+id).css({"color":"#ED1C25"})
-		$("#"+id).css({"color":"white"});;
+		$("#"+id).css({"color":"#ED1C25"}); //TEST
+		
 	}, function(){
 		var id = $(this).attr('id');
+		$("#"+id).css({"color":"white"});
 	})
 
 	$('li').hover(function(){

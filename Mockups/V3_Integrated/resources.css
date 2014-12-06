@@ -66,19 +66,16 @@ nav h1{
 .content{
 	height: 100%;
 	margin-top: 150px;
-	width: 100%;
+
 	display: flex;
 	display: -webkit-flex;
-	display: -webkit-box;
+	/*display: -webkit-box;*/
 	justify-content: left;
 	
 	padding-left: 50px;
 	color: black;
 
 	padding-bottom: 250px;
-
-	/*overflow: auto;*/
-
 }
 
 .column ul{
@@ -105,15 +102,16 @@ nav h1{
 	color: black;
 }
 .content .column{
-	width: 70%;
+	width: 80%;
 	font-size: 0.75em;
 	margin-left: 15px;
 	margin-bottom: 100px;
 }
 
 .column_sm {
-	width: 200px;
+	width: 250px;
 	font-size: 0.75em;
+	float: right;
 }
 .column_sm a{
 	color:#878989;
