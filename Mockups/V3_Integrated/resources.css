@@ -41,7 +41,7 @@ a{
 	color:white;
 	font-size: 1em;
 }
-nav a:not(#title){
+.navLinks{
 	font-size: 0.75em;
 	text-transform: lowercase;
 }
@@ -59,6 +59,15 @@ nav h1{
 	float: left;
 	margin-top: 1.5%;
 	text-decoration: none;
+}
+.vertical-line{
+	width: 1px;
+	background-color: white;
+	height: 20px;
+	display: inline-block;
+}#home{
+	text-transform: capitalize;
+	font-size: 0.75em;
 }
 
 /***************CONTENT*********************/

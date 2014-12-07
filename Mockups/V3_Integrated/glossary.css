@@ -42,7 +42,7 @@ a{
 	color:white;
 	font-size: 1em;
 }
-nav a:not(#title){
+.navLinks{
 	font-size: 0.75em;
 	text-transform: lowercase;
 }
@@ -64,7 +64,15 @@ h1{
 h6{
 	font-size: 100%;
 }
-
+.vertical-line{
+	width: 1px;
+	background-color: white;
+	height: 20px;
+	display: inline-block;
+}#home{
+	text-transform: capitalize;
+	font-size: 0.75em;
+}
 /***************CONTENT*********************/
 
 .content{
@@ -102,9 +110,6 @@ h6{
 	padding-right: 2%;
 }
 
-.hovered{
-	cursor: pointer;
-}
 
 #heading{
 	margin-top: 170px;
