@@ -51,7 +51,7 @@ $(document).ready(function(){
 
 		var svgWidth = whole.attr("width");
 
-		console.log("window svg footer content"+windowWidth+" "+svgWidth+" "+$('footer').width()+" "+$("#content").width());
+		// console.log("window svg footer content"+windowWidth+" "+svgWidth+" "+$('footer').width()+" "+$("#content").width());
 
 		$('#navContainer').css({'width':svgWidth});
 		$('#footerContainer').css({'width':svgWidth});

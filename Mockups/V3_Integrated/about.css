@@ -84,6 +84,8 @@ h6{
 
 #main{
 	display: flex;
+	display: -webkit-flex;
+	display: -webkit-box;
 	justify-content: left;
 	padding-left: 2%;
 	color: black;
@@ -123,13 +125,15 @@ h6{
 	color:#878989;
 }
 
-.alphaheader{
+.alphaheader {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
+	line-height: 26px;
 	font-size: 1.8em;
-	color:#878989;
+	color: #878989;
 	margin-bottom: 14px;
-	margin-top: 18px;
+	margin-top: -4px;
+
 }
 
 #team{
