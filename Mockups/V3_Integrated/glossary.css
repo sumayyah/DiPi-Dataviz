@@ -13,7 +13,7 @@ body{
 /**************NAVIGATION********/
 nav{
 	width: 100%;
-	height: 75px;
+	height: 10%;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -109,12 +109,12 @@ h6{
 	font-size: 0.75em;
 	margin-left: -5px;
 	padding: 0.5%;
-	padding-right: 2%;
+	padding-right: 3%;
 }
 
 
 #heading{
-	margin-top: 170px;
+	margin-top: 13%;
 	margin-bottom: 20px;
 	padding-left: 2%;
 	width: 100%;
