@@ -143,8 +143,10 @@ h1{
 	display: -webkit-box;
 	justify-content:center;
 
-	padding: 40px;
-	/*padding-bottom: 60px;*/
+	padding-top: 15px;
+	/*padding-bottom: 40px;*/
+	padding-left: 2%;
+	padding-right: 40px;
 	overflow: auto;
 
 	-moz-box-shadow: 0px -2px 5px 0.5px #888;
@@ -182,14 +184,17 @@ h2, h4{
 	margin-top: 15px;
 	font-size: 1.3em;
 }
-.shadow_bottom{
+/*.shadow_bottom{
 	-moz-box-shadow: 0px -3px 3px 0 #ccc;
 	-webkit-box-shadow: 0px -3px 3px 0 #ccc;
 	box-shadow: 0px -3px 3px 0 #ccc;
-}#col4{
+}*/
+#col4{
+	width: 14%;
 	text-align: right;
-	padding-right: 50px;
+	padding-right: 2%;
 	margin-top: -20px;
+	margin-right: 50px;
 }
 #col4 span{
 	display: block;

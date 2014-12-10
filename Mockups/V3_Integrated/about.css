@@ -153,6 +153,13 @@ h6{
 .italicize{
 	font-style: italic;
 }
+.hovered{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.hovered:hover{
+	color: #ED1C25;
+}
 
 /***************FOOTER****************/
 footer{

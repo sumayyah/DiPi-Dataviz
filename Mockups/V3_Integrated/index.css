@@ -57,7 +57,7 @@ a:visited, a:hover{
 #titleContainer{
 	width: 350px;
 	float: left;
-	padding: 8px 0px 0px;
+	padding: 12px 0px 0px;
 	/*margin-top: 2%;*/
 	margin-right: 50px;
 }#title{
@@ -122,7 +122,7 @@ h1{
 	display: -webkit-box;
 
 	justify-content: center;
-	padding: 0px 30px 0px;
+	padding: 0px 40px 0px;
 }
 #intro h1{
 	color:black;
@@ -162,7 +162,7 @@ h1{
 	display: -webkit-box;
 	justify-content:left;
 
-	padding-top: 25px;
+	padding-top: 15px;
 	/*padding-bottom: 40px;*/
 	padding-left: 2%;
 	padding-right: 40px;

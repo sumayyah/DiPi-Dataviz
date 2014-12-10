@@ -101,7 +101,7 @@ nav h1{
 }
 .column ul li img{
 	margin-right: 3em;
-	margin-bottom: 3em;
+	margin-bottom: 1em;
 }
 .column ul li img:hover{
 	cursor: pointer;
@@ -121,6 +121,8 @@ nav h1{
 	width: 250px;
 	font-size: 0.75em;
 	float: right;
+	margin-right: 5%;
+	margin-top: 13%;
 }
 .column_sm a{
 	color:#878989;
@@ -140,10 +142,6 @@ nav h1{
 }.column_sm ul li:nth-child(4){
 	list-style-image: url('images/resources_remix_icon.png');
 }
-
-.column_sm ul{
-/*	margin-left: 50px;
-*/}
 
 .downloadable{
 	position: relative;

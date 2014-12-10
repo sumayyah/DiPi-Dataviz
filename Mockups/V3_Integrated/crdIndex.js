@@ -78,7 +78,7 @@ $(document).ready(function(){
 					$("#connections").text(obj.KeyConnections);
 					$("#publications").text(obj.KeyPublications);
 					$("#references").text(obj.Reference);
-
+					$(".blankSpace").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.");
 					setCountry(obj.Geography);
 					animateDiv();
 			}
