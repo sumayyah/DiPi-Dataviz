@@ -78,10 +78,10 @@ nav h1{
 
 	display: flex;
 	display: -webkit-flex;
-	/*display: -webkit-box;*/
+	display: -webkit-box;
 	justify-content: left;
 	
-	padding-left: 50px;
+	padding-left: 2%;
 	color: black;
 
 	padding-bottom: 250px;
@@ -111,18 +111,17 @@ nav h1{
 	color: black;
 }
 .content .column{
-	width: 80%;
+	width: 75%;
 	font-size: 0.75em;
 	margin-left: 15px;
 	margin-bottom: 100px;
+	/*text-align: left;*/
 }
 
 .column_sm {
-	width: 250px;
-	font-size: 0.75em;
-	float: right;
+	width: 18%;
+	font-size: 0.78em;
 	margin-right: 5%;
-	margin-top: 13%;
 }
 .column_sm a{
 	color:#878989;
