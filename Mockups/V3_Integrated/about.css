@@ -110,10 +110,6 @@ h6{
 	padding-right: 1%;
 }
 
-.hovered{
-	cursor: pointer;
-}
-
 #heading{
 	margin-top: 150px;
 	margin-bottom: 15px;
@@ -155,12 +151,23 @@ h6{
 }
 .hovered{
 	cursor: pointer;
+}
+.link{
+	cursor: pointer;
 	text-decoration: underline;
 }
-.hovered:hover{
+.link:hover{
 	color: #ED1C25;
 }
 
+.column ul{
+	list-style-type: none;
+	padding-top: 7%;
+	font-weight: bold;
+}
+.column li{
+	padding-top: 2%;
+}
 /***************FOOTER****************/
 footer{
 	margin-top: 50px;
@@ -183,7 +190,7 @@ footer ul{
 	margin-left: 2%;
 	padding: 5px;
 }
-#contact a{
+#contact li{
 	color: white;
 	font-family: 'Lato';
 	font-size: 10pt;
