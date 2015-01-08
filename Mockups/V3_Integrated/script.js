@@ -67,13 +67,26 @@ $(document).ready(function(){
 		entityArray = whole.selectAll(".name");
 
 		entities = whole.select("#Entities");
-		entities1 = whole.select("#Entities_1_");
+		entities1 = whole.select("g#Entities_1_");
 		entities2 = whole.select("#Entities_2_");
 		entities3 = whole.select("#Entities_3_");
 		entities4 = whole.select("#Entities_4_");
 
+		
+
 		entitiesGroup = whole.group(entities, entities1, entities2, entities3, entities4);
 		pathsGroup = whole.select("#Connections");
+		var array = entitiesGroup.node.children;
+
+		console.log(array);
+		for(var i=0; i< array.length;i++){
+			var child = array[i].children;
+			console.log(child)
+			for(var j=0; j< child.length;j++){
+				child[j].className.baseVal = "name";
+				console.log(child[j])
+			}
+		}
 
 		// //Change cursor to indicate clickability
 		entitiesGroup.hover(makeClickable(entitiesGroup));
@@ -111,7 +124,6 @@ $(document).ready(function(){
 		switch(id){
 			case 'cdev':
 				console.log("clicked comm dev! "+$("#Community_Design").position().top);//This value is way off in chrome, it's 116
-				// $("html, body").animate({scrollTop: $("#Community_Design").position().top-150}, 1000); $(nav).height()
 				$("html, body").animate({scrollTop: "588px"}, 1000);
 				$("#"+id).css({"color":"#ED1C25"});
 				$("a:not(#cdev)").css({"color":"white"});
@@ -120,7 +132,6 @@ $(document).ready(function(){
 
 			case 'ydev':
 				console.log("clicked youth!"+ $("#Youth_Development").position().top);
-				// $("html, body").animate({scrollTop: $("#Youth_Development").position().top-150}, 1000);
 				$("html, body").animate({scrollTop: 912}, 1000);
 				$("#"+id).css({"color":"#ED1C25"});
 				$("a:not(#ydev)").css({"color":"white"});
@@ -129,7 +140,6 @@ $(document).ready(function(){
 
 			case 'iDev':
 				console.log("clicked international dev!"+$("#International_Development").position().top);
-				// $("html, body").animate({scrollTop: $("#International_Development").position().top-150}, 1000);
 				$("html, body").animate({scrollTop: 1460}, 1000);
 				$("#"+id).css({"color":"#ED1C25"});
 				$("a:not(#iDev)").css({"color":"white"});
@@ -138,7 +148,6 @@ $(document).ready(function(){
 
 			case 'health':
 				console.log("clicked health!"+$("#Public_Health").position().top);
-				// $("html, body").animate({scrollTop: $("#Public_Health").position().top-150}, 1000);
 				$("html, body").animate({scrollTop: 1910}, 1000);
 				$("#"+id).css({"color":"#ED1C25"});
 				$("a:not(#health)").css({"color":"white"});
@@ -147,7 +156,6 @@ $(document).ready(function(){
 
 			case 'tech':
 				console.log("clicked tech!"+$("#Technology_Development").position().top);
-				// $("html, body").animate({scrollTop: $("#Technology_Development").position().top-150}, 1000);
 				$("html, body").animate({scrollTop: 2038}, 1000);
 				$("#"+id).css({"color":"#ED1C25"});
 				$("a:not(#tech)").css({"color":"white"});
@@ -187,7 +195,7 @@ $(document).ready(function(){
 					$("#connections").text(obj.KeyConnections);
 					$("#publications").text(obj.KeyPublications);
 					$("#references").text(obj.Reference);
-					$(".blankSpace").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.");
+					// $(".blankSpace").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.");
 					setCountry(obj.Geography);
 					
 					animateHiddenDiv();

@@ -39,7 +39,13 @@ $(document).ready(function(){
 		
 	}, function(){
 		var id = $(this).attr('id');
-		$("#"+id).css({"color":"white"});
+		var itemClass = $(this).attr('class');
+
+		if(itemClass == 'onPage'){ /*This is for the email link in the middle of About page*/
+			$("#"+id).css({"color":"black"});
+		} else {
+			$("#"+id).css({"color":"white"});
+		}
 	})
 
 	$('li').hover(function(){

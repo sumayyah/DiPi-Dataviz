@@ -168,6 +168,10 @@ h6{
 .column li{
 	padding-top: 2%;
 }
+
+.column p{
+	padding-top: 4%;
+}
 /***************FOOTER****************/
 footer{
 	margin-top: 50px;
