@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 	var paper = Snap("#paper");
 
-	Snap.load("materials/timeline5.svg", onSVGLoaded);
+	Snap.load("materials/timeline6.svg", onSVGLoaded);
 
 	var yearsGroup;
 	var entitiesGroup;
@@ -44,7 +44,7 @@ $(document).ready(function(){
 		//Parse SVG file
 		
 		var whole = svgFile.select("#Layer1");
-		console.log("Loaded! "+whole.attr("width"));
+		console.log("Loaded! ");
 
 
 		/***************SET SVG-DEPENDENT WIDTHS************/
@@ -64,29 +64,26 @@ $(document).ready(function(){
 		publicHealth = whole.select("#Public_Health");
 		technologyDevelopment = whole.select("#Technology_Development");
 
-		entityArray = whole.selectAll(".name");
-
 		entities = whole.select("#Entities");
-		entities1 = whole.select("g#Entities_1_");
+		entities1 = whole.select("#Entities_1_");
 		entities2 = whole.select("#Entities_2_");
 		entities3 = whole.select("#Entities_3_");
 		entities4 = whole.select("#Entities_4_");
 
-		
-
 		entitiesGroup = whole.group(entities, entities1, entities2, entities3, entities4);
 		pathsGroup = whole.select("#Connections");
-		var array = entitiesGroup.node.children;
+		var array = entitiesGroup.node.childNodes;
 
-		console.log(array);
+		/*Tag all relevant clickable items with a CSS selector*/
 		for(var i=0; i< array.length;i++){
-			var child = array[i].children;
-			console.log(child)
-			for(var j=0; j< child.length;j++){
-				child[j].className.baseVal = "name";
-				console.log(child[j])
+			var child = array[i].childNodes;
+			for(var j=1; j<child.length;j+=2){
+				var subchild = child[j];
+				subchild.className.baseVal = "name";
 			}
 		}
+
+		entityArray = whole.selectAll(".name");
 
 		// //Change cursor to indicate clickability
 		entitiesGroup.hover(makeClickable(entitiesGroup));
